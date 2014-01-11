@@ -23,7 +23,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="4" selection-start="153" selection-end="222" vertical-scroll-proportion="-3.2692308">
+            <state line="7" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -32,7 +32,7 @@
       <file leaf-file-name="about.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="73" selection-start="222" selection-end="222" vertical-scroll-proportion="-3.2692308">
+            <state line="6" column="32" selection-start="255" selection-end="255" vertical-scroll-proportion="-3.9230769">
               <folding />
             </state>
           </provider>
@@ -41,7 +41,7 @@
       <file leaf-file-name="contacts.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contacts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="73" selection-start="222" selection-end="222" vertical-scroll-proportion="0.15653776">
+            <state line="8" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.25046042">
               <folding />
             </state>
           </provider>
@@ -321,21 +321,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="153" selection-end="222" vertical-scroll-proportion="-3.2692308">
+        <state line="7" column="30" selection-start="310" selection-end="310" vertical-scroll-proportion="-4.576923">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="73" selection-start="222" selection-end="222" vertical-scroll-proportion="-3.2692308">
+        <state line="6" column="32" selection-start="255" selection-end="255" vertical-scroll-proportion="-3.9230769">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="73" selection-start="222" selection-end="222" vertical-scroll-proportion="0.15653776">
+        <state line="8" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.25046042">
           <folding />
         </state>
       </provider>
