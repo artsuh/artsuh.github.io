@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src='lib/quintus.js'></script>
+        <script src='lib/quintus_sprites.js'></script>
+        <script src='lib/quintus_scenes.js'></script>
+        <script src='lib/quintus_input.js'></script>
+        <script src='lib/quintus_anim.js'></script>
+        <script src='lib/quintus_2d.js'></script>
+        <script src='lib/quintus_touch.js'></script>
+        <script src='lib/quintus_ui.js'></script>
+        <script src='lib/quintus_audio.js'></script>
+    </head>
+    <body style="background-color: black;">
+        <script>
+        var Q = Quintus({audioSupported:['ogg'] })
+            .include("Sprites, Scenes, Input, 2D, Touch, UI")
+            .setup({
+                width: 1120,
+                height: 560,
+                development: true
+            }).controls().touch();
+
+        Q.include("Audio").enableSound();
+
+        //player
+        Q.Sprite.extend("Player",{
+            init: function(p) {
+              this._super(p, { asset: "player.png", x: 110, y: 130, jumpSpeed: -510});
+              this.add('2d, platformerControls');              
+            },
+            step: function(dt) {
+                if(Q.inputs['left'] && this.p.direction == 'right') {
+                    this.p.flip = 'x';
+                } 
+                if(Q.inputs['right']  && this.p.direction == 'left') {
+                    this.p.flip = false;                    
+                }
+            }                    
+          });
+                       
+        
+        Q.scene("level1",function(stage) {
+          
+            var background = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex: 0, sheet: 'tiles', tileW: 69, tileH: 70, type: Q.SPRITE_NONE });
+            stage.insert(background);
+
+            var clouds = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:1, sheet: 'tiles', tileW: 70, tileH: 70, type: Q.SPRITE_NONE});
+            stage.insert(clouds);
+
+            var water = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:3, sheet: 'tiles', tileW: 70, tileH: 70, type: Q.SPRITE_NONE});
+            stage.insert(water);
+            
+            stage.collisionLayer(new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:2,  sheet: 'tiles', tileW: 70, tileH: 70}));
+          
+            var player = stage.insert(new Q.Player());
+            
+            stage.add("viewport").follow(player,{x: true, y: true},{minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h});
+
+            stage.insert(new Q.UI.Button({
+                playing: true,
+                label: "Sound off",
+                x: 250,
+                y: 20
+            }, function(){
+                Q.audio.stop();
+            }));
+        });
+
+        //load assets
+        Q.load("tiles_map.png, player.png, level0.tmx, bg.ogg, creek.ogg", function() {
+          Q.sheet("tiles","tiles_map.png", { tilew: 70, tileh: 70});
+          Q.stageScene("level1");
+          Q.audio.play('bg.ogg', {loop: true});
+          Q.audio.play('creek.ogg', {loop: true});
+        });
+
+        </script>
+    </body>
+</html>
