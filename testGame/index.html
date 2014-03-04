@@ -18,8 +18,8 @@
         var Q = Quintus({audioSupported:['ogg'] })
             .include("Sprites, Scenes, Input, 2D, Touch, UI")
             .setup({
-                width: 1120,
-                height: 560,
+                width: 5000,
+                height: 1000,
                 development: true
             }).controls().touch();
 
@@ -43,35 +43,20 @@
                        
         
         Q.scene("level1",function(stage) {
-          
-            var background = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex: 0, sheet: 'tiles', tileW: 69, tileH: 70, type: Q.SPRITE_NONE });
+
+            var background = new Q.TileLayer({ dataAsset: 'lvl_01.tmx', layerIndex: 0, sheet: 'tiles', tileW: 50, tileH: 50, type: Q.SPRITE_NONE });
             stage.insert(background);
 
-            var clouds = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:1, sheet: 'tiles', tileW: 70, tileH: 70, type: Q.SPRITE_NONE});
-            stage.insert(clouds);
+            stage.collisionLayer(new Q.TileLayer({ dataAsset: 'lvl_01.tmx', layerIndex:1,  sheet: 'tiles', tileW: 50, tileH: 50}));
 
-            var water = new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:3, sheet: 'tiles', tileW: 70, tileH: 70, type: Q.SPRITE_NONE});
-            stage.insert(water);
-            
-            stage.collisionLayer(new Q.TileLayer({ dataAsset: 'level0.tmx', layerIndex:2,  sheet: 'tiles', tileW: 70, tileH: 70}));
-          
             var player = stage.insert(new Q.Player());
-            
-            stage.add("viewport").follow(player,{x: true, y: true},{minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h});
 
-            stage.insert(new Q.UI.Button({
-                playing: true,
-                label: "Sound off",
-                x: 250,
-                y: 20
-            }, function(){
-                Q.audio.stop();
-            }));
+            stage.add("viewport").follow(player,{x: true, y: true},{minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h});
         });
 
         //load assets
-        Q.load("tiles_map.png, player.png, level0.tmx, bg.ogg, creek.ogg", function() {
-          Q.sheet("tiles","tiles_map.png", { tilew: 70, tileh: 70});
+        Q.load("Tiles.png, player.png, lvl_01.tmx, bg.ogg, creek.ogg", function() {
+          Q.sheet("tiles","Tiles.png", { tilew: 50, tileh: 50});
           Q.stageScene("level1");
           Q.audio.play('bg.ogg', {loop: true});
           Q.audio.play('creek.ogg', {loop: true});
