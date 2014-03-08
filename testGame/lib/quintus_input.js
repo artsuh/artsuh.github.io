@@ -536,6 +536,7 @@ Quintus.Input = function(Q) {
         p.vy = p.jumpSpeed;
         p.landed = -dt;
       }
+
       p.landed -= dt;
 
     }

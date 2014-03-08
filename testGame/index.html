@@ -16,30 +16,63 @@
     <body style="background-color: black;">
         <script>
         var Q = Quintus({audioSupported:['ogg'] })
-            .include("Sprites, Scenes, Input, 2D, Touch, UI")
+            .include("Sprites, Anim, Scenes, Input, 2D, Touch, UI")
             .setup({
                 width: 1000,
                 height: 600,
                 development: true
             }).controls().touch();
 
+        Q.animations
+
         Q.include("Audio").enableSound();
 
         //player
         Q.Sprite.extend("Player",{
             init: function(p) {
-              this._super(p, { asset: "player.png", x: 110, y: 130, jumpSpeed: -790});
-              this.add('2d, platformerControls');              
+              this._super(p, {
+                  x: 210,
+                  y: 130,
+                  jumpSpeed: -690,
+                  sprite: "player",
+                  sheet: 'player',
+                  scale: 2,
+                  jumpCount: 0
+              });
+              this.add('2d, platformerControls, animation');
             },
             step: function(dt) {
-                if(Q.inputs['left'] && this.p.direction == 'right') {
+
+                if(this.p.vx > 0) {
+                    this.p.flip = false;
+                    this.play("run_right");
+                } else if (this.p.vx < 0) {
                     this.p.flip = 'x';
-                } 
-                if(Q.inputs['right']  && this.p.direction == 'left') {
-                    this.p.flip = false;                    
+                    this.play("run_left");
                 }
+                else
+                {
+                    this.play("stand_" + this.p.direction);
+                }
+
+//                if(Q.inputs['left'] && this.p.direction == 'right') {
+//
+//                }
+//                else if(Q.inputs['right']  && this.p.direction == 'left') {
+//
+//                }
+//                else {
+//
+//                }
             }                    
           });
+
+        Q.animations('player', {
+            run_right: {frames: [4, 5, 6, 7, 8, 9, 10, 11], next: 'stand_right', rate: 1/5},
+            run_left: {frames: [4, 5, 6, 7, 8, 9, 10, 11], next: 'stand_left', rate: 1/5},
+            stand_right: {frames: [0, 1], rate: 1/4},
+            stand_left: {frames: [0, 1], rate: 1/4}
+        });
                        
         
         Q.scene("level1",function(stage) {
@@ -57,9 +90,10 @@
         //load assets
         Q.load("Tiles.png, player.png, lvl_01.tmx, bg.ogg, creek.ogg", function() {
           Q.sheet("tiles","Tiles.png", { tilew: 50, tileh: 50});
+          Q.sheet("player", "player.png", {tilew: 75, tileh: 75, sx: 0, sy: 0});
           Q.stageScene("level1");
-          Q.audio.play('bg.ogg', {loop: true});
-          Q.audio.play('creek.ogg', {loop: true});
+//          Q.audio.play('bg.ogg', {loop: true});
+//          Q.audio.play('creek.ogg', {loop: true});
         });
 
         </script>
