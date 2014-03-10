@@ -13,6 +13,9 @@
         <script src='lib/quintus_ui.js'></script>
         <script src='lib/quintus_audio.js'></script>
         <style media="screen" type="text/css">
+            body {
+                background: #ffffff;
+            }
             #loading {
                 margin:50px auto;
                 max-width:1024px;
@@ -61,16 +64,16 @@
                 development: true
             }).controls().touch();
 
-        Q.animations
-
         Q.include("Audio").enableSound();
+
+
 
         //player
         Q.Sprite.extend("Player",{
             init: function(p) {
               this._super(p, {
-                  x: 210,
-                  y: 130,
+                  x: 290,
+                  y: 0,
                   jumpSpeed: -690,
                   sprite: "player",
                   sheet: 'player',
@@ -92,16 +95,6 @@
                 {
                     this.play("stand_" + this.p.direction);
                 }
-
-//                if(Q.inputs['left'] && this.p.direction == 'right') {
-//
-//                }
-//                else if(Q.inputs['right']  && this.p.direction == 'left') {
-//
-//                }
-//                else {
-//
-//                }
             }                    
           });
 
@@ -111,28 +104,90 @@
             stand_right: {frames: [0, 1], rate: 1/4},
             stand_left: {frames: [0, 1], rate: 1/4}
         });
-                       
+
+        Q.Sprite.extend("Enemy",{
+            init: function(p) {
+                this._super(p, { sheet: 'enemy', sprite: 'enemy', vx: -120 });
+                this.add('2d, aiBounce, animation');
+
+                this.on("bump.left,bump.right,bump.bottom",function(collision) {
+                    if(collision.obj.isA("Player")) {
+                        Q.stageScene("endGame",1, { label: "You Died" });
+                        collision.obj.destroy();
+                    }
+                });
+
+                this.on("bump.top",function(collision) {
+                    if(collision.obj.isA("Player")) {
+                        this.destroy();
+                        collision.obj.p.vy = -300;
+                    }
+                });
+            },
+            step: function(dt) {
+                if(this.p.vx > 0) {
+                    this.p.flip="x";
+                    this.play("run_right");
+                } else if(this.p.vx < 0) {
+                    this.p.flip="";
+                    this.play("run_left");
+                }
+                else
+                {
+                    this.play("stand_" + this.p.direction);
+                }
+            }
+        });
+
+        Q.animations('enemy', {
+            stand_left: {frames: [0, 1], rate: 1/2},
+            stand_right: {frames: [0, 1], rate: 1/2},
+            run_right: {frames: [2, 3], next: 'stand_right', rate: 1/4},
+            run_left: {frames: [2, 3], next: 'stand_left', rate: 1/4}
+        });
+
+        Q.scene('endGame',function(stage) {
+            var box = stage.insert(new Q.UI.Container({
+                x: Q.width/2, y: Q.height/2, fill: "rgba(0,0,0,0.5)"
+            }));
+
+            var button = box.insert(new Q.UI.Button({ x: 0, y: 0, fill: "#CCCCCC",
+                label: "Play Again" }))
+            var label = box.insert(new Q.UI.Text({x:10, y: -10 - button.p.h,
+                label: stage.options.label }));
+            button.on("click",function() {
+                Q.clearStages();
+                Q.stageScene('level1');
+            });
+            box.fit(20);
+        });
         
         Q.scene("level1",function(stage) {
 
-            var background = new Q.TileLayer({ dataAsset: 'lvl_01.tmx', layerIndex: 0, sheet: 'tiles', tileW: 50, tileH: 50, type: Q.SPRITE_NONE });
+            var background = new Q.TileLayer({ dataAsset: 'lvl_02.tmx', layerIndex: 0, sheet: 'tiles', tileW: 50, tileH: 50, type: Q.SPRITE_NONE });
+
+
+            stage.collisionLayer(new Q.TileLayer({ dataAsset: 'lvl_02.tmx', layerIndex:1,  sheet: 'tiles', tileW: 50, tileH: 50}));
             stage.insert(background);
 
-            stage.collisionLayer(new Q.TileLayer({ dataAsset: 'lvl_01.tmx', layerIndex:1,  sheet: 'tiles', tileW: 50, tileH: 50}));
-
             var player = stage.insert(new Q.Player());
+
+            stage.insert(new Q.Enemy({x:350, y: 100}));
+            stage.insert(new Q.Enemy({x:500, y: 100}));
+            stage.insert(new Q.Enemy({x:650, y: 100}));
+            stage.insert(new Q.Enemy({x:750, y: 100}));
 
             stage.add("viewport").follow(player,{x: true, y: true},{minX: 0, maxX: background.p.w, minY: 0, maxY: background.p.h});
         });
 
         //load assets
-        Q.load("Tiles.png, player.png, lvl_01.tmx, bg.ogg, creek.ogg", function() {
+        Q.load("Tiles.png, player.png, enemy.png, lvl_02.tmx, bg.ogg", function() {
           document.getElementById("loading_progress").style.display = 'none';
           Q.sheet("tiles","Tiles.png", { tilew: 50, tileh: 50});
           Q.sheet("player", "player.png", {tilew: 75, tileh: 75, sx: 0, sy: 0});
+          Q.sheet("enemy", "enemy.png", {tilew: 75, tileh: 75, sx: 0, sy: 0});
           Q.stageScene("level1");
           Q.audio.play('bg.ogg', {loop: true});
-          Q.audio.play('creek.ogg', {loop: true});
         }, {
             progressCallback: function(loaded,total) {
                 var element = document.getElementById("loading_progress");
