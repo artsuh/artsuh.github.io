@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="10316dfa-8074-463a-851c-3f49c1dccece" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="fma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -319,7 +318,11 @@
       <created>1394994487858</created>
       <updated>1394994487858</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="hey&#10;">
+      <created>1394994938499</created>
+      <updated>1394994938499</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
