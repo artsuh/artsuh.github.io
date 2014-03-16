@@ -45,7 +45,7 @@ var GameInitialize = function() {
 		Q.sheet("player", "player.png", {tilew: 75, tileh: 75, sx: 0, sy: 0});
 		Q.sheet("enemy1", "enemy1.png", {tilew: 75, tileh: 75, sx: 0, sy: 0});
 		Q.stageScene("level1");
-//          Q.audio.play('bg.ogg', {loop: true});
+          Q.audio.play('bg.ogg', {loop: true});
 	}, {
 		progressCallback: function(loaded,total) {
 			progressBar.innerHTML = "<p>Loaded "+loaded+"/"+total+"</p>";
