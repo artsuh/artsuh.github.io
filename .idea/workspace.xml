@@ -2,90 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10316dfa-8074-463a-851c-3f49c1dccece" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\ep.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\Tiles.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\enemy1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\pashc.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player.psd" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player_old.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\endGame.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\extinguisher.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\game.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\level1.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\player.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_2d.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_anim.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_audio.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_input.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_scenes.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_sprites.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_touch.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_ui.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\readme.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\wtf" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\about.html" afterPath="$PROJECT_DIR$/lab/about.html" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\contacts.html" afterPath="$PROJECT_DIR$/lab/contacts.html" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\css\bootstrap-theme.css" afterPath="$PROJECT_DIR$/lab/css/bootstrap-theme.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\css\bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/lab/css/bootstrap-theme.min.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\css\bootstrap.css" afterPath="$PROJECT_DIR$/lab/css/bootstrap.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\css\bootstrap.min.css" afterPath="$PROJECT_DIR$/lab/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\css\style.css" afterPath="$PROJECT_DIR$/lab/css/style.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\Air Millhouse.rar" afterPath="$PROJECT_DIR$/lab/fonts/Air Millhouse.rar" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\AirMillhouse\AirMillhouse.ttf" afterPath="$PROJECT_DIR$/lab/fonts/AirMillhouse/AirMillhouse.ttf" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\capitalist.ttf" afterPath="$PROJECT_DIR$/lab/fonts/capitalist.ttf" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/lab/fonts/glyphicons-halflings-regular.eot" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/lab/fonts/glyphicons-halflings-regular.svg" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/lab/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/lab/fonts/glyphicons-halflings-regular.woff" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\131404860.jpg" afterPath="$PROJECT_DIR$/lab/images/131404860.jpg" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\Mac-Applications.jpeg" afterPath="$PROJECT_DIR$/lab/images/Mac-Applications.jpeg" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\Thumbs.db" afterPath="$PROJECT_DIR$/lab/images/Thumbs.db" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\icons\Thumbs.db" afterPath="$PROJECT_DIR$/lab/images/icons/Thumbs.db" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\icons\header_icon.png" afterPath="$PROJECT_DIR$/lab/images/icons/header_icon.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\jumbotron_bg.png" afterPath="$PROJECT_DIR$/lab/images/jumbotron_bg.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\1.png" afterPath="$PROJECT_DIR$/lab/images/static/1.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\2.png" afterPath="$PROJECT_DIR$/lab/images/static/2.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\3.png" afterPath="$PROJECT_DIR$/lab/images/static/3.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\4.png" afterPath="$PROJECT_DIR$/lab/images/static/4.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\5.png" afterPath="$PROJECT_DIR$/lab/images/static/5.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\images\static\6.png" afterPath="$PROJECT_DIR$/lab/images/static/6.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\js\bootstrap.js" afterPath="$PROJECT_DIR$/lab/js/bootstrap.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\js\bootstrap.min.js" afterPath="$PROJECT_DIR$/lab/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\js\jquery.bxslider.zip" afterPath="$PROJECT_DIR$/lab/js/jquery.bxslider.zip" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\js\jquery\jquery.js" afterPath="$PROJECT_DIR$/lab/js/jquery/jquery.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\main.html" afterPath="$PROJECT_DIR$/lab/main.html" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\audio\bg.ogg" afterPath="$PROJECT_DIR$/audio/bg.ogg" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\css\style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\data\lvl_01.tmx" afterPath="$PROJECT_DIR$/data/lvl_01.tmx" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\ep.js" afterPath="$PROJECT_DIR$/ep.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\Thumbs.db" afterPath="$PROJECT_DIR$/images/Thumbs.db" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\Tiles.png" afterPath="$PROJECT_DIR$/images/Tiles.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\enemy1.png" afterPath="$PROJECT_DIR$/images/enemy1.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\pashc.png" afterPath="$PROJECT_DIR$/images/pashc.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player.png" afterPath="$PROJECT_DIR$/images/player.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player.psd" afterPath="$PROJECT_DIR$/images/player.psd" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\images\player_old.png" afterPath="$PROJECT_DIR$/images/player_old.png" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\endGame.js" afterPath="$PROJECT_DIR$/js/endGame.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\extinguisher.js" afterPath="$PROJECT_DIR$/js/extinguisher.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\game.js" afterPath="$PROJECT_DIR$/js/game.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\level1.js" afterPath="$PROJECT_DIR$/js/level1.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\js\player.js" afterPath="$PROJECT_DIR$/js/player.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus.js" afterPath="$PROJECT_DIR$/lib/quintus.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_2d.js" afterPath="$PROJECT_DIR$/lib/quintus_2d.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_anim.js" afterPath="$PROJECT_DIR$/lib/quintus_anim.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_audio.js" afterPath="$PROJECT_DIR$/lib/quintus_audio.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_input.js" afterPath="$PROJECT_DIR$/lib/quintus_input.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_scenes.js" afterPath="$PROJECT_DIR$/lib/quintus_scenes.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_sprites.js" afterPath="$PROJECT_DIR$/lib/quintus_sprites.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_touch.js" afterPath="$PROJECT_DIR$/lib/quintus_touch.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\lib\quintus_ui.js" afterPath="$PROJECT_DIR$/lib/quintus_ui.js" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\readme.md" afterPath="$PROJECT_DIR$/readme.md" />
-      <change type="MOVED" beforePath="C:\Users\boo\Documents\projects\github\consoleassert.github.io\testGame\wtf" afterPath="$PROJECT_DIR$/wtf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="fma.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,19 +38,10 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="54" selection-start="309" selection-end="309" vertical-scroll-proportion="0.21915285">
+            <state line="5" column="63" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15653776">
               <folding>
-                <marker date="1394995955099" expanded="true" signature="255:905" placeholder="..." />
+                <marker date="1395591863985" expanded="true" signature="251:901" placeholder="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -167,7 +76,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
+            <state line="25" column="31" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -194,7 +103,7 @@
       <file leaf-file-name="quintus_2d.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/quintus_2d.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="23" selection-start="3974" selection-end="3974" vertical-scroll-proportion="-6.16">
+            <state line="146" column="23" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -302,6 +211,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consoleassert.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fma" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="consoleassert.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -313,9 +250,9 @@
     <property name="options.lastSelected" value="Errors" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="GoToClass.includeJavaFiles" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -418,14 +355,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18448023" sideWeight="0.3263328" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.183172" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.183172" sideWeight="0.6704362" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18448023" sideWeight="0.3263328" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32996634" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -435,6 +370,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -514,37 +451,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/quintus_ui.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="249" column="2" selection-start="7197" selection-end="7197" vertical-scroll-proportion="0.3321617">
-          <folding />
-        </state>
+        <state line="249" column="2" selection-start="7197" selection-end="7197" vertical-scroll-proportion="0.3321617" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="17" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/extinguisher.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="409" selection-end="414" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="61" selection-start="409" selection-end="414" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/endGame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="47" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="10" column="47" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/lvl_01.tmx">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="13" column="18" selection-start="550" selection-end="550" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/images/Tiles.png">
@@ -561,7 +488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/quintus_2d.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="23" selection-start="3974" selection-end="3974" vertical-scroll-proportion="-6.16">
+        <state line="146" column="23" selection-start="3974" selection-end="3974" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -580,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/game.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="8" selection-start="1290" selection-end="1290" vertical-scroll-proportion="0.0">
@@ -596,9 +516,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ep.js">
@@ -615,11 +533,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="31" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="54" selection-start="309" selection-end="309" vertical-scroll-proportion="0.21915285">
+        <state line="5" column="63" selection-start="197" selection-end="197" vertical-scroll-proportion="0.15653776">
           <folding>
-            <marker date="1394995955099" expanded="true" signature="255:905" placeholder="..." />
+            <marker date="1395591863985" expanded="true" signature="251:901" placeholder="..." />
           </folding>
         </state>
       </provider>
