@@ -106,8 +106,14 @@ Game.initGameArea = function () {
 }
 
 Game.animate = function() {
-	requestAnimFrame(Game.animate);
-	Game.renderer.render(Game.stage);
+	var finish = Game.gameContainer.children == 0;
+	if(!finish) {
+		requestAnimFrame(Game.animate);
+		Game.renderer.render(Game.stage);	
+	} else {
+		alert("GET U GIFT!!!");
+	}
+	
 }
 
 Game.playBg = function() {
