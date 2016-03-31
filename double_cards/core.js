@@ -1,7 +1,7 @@
 (function() {
 	var client = new Dropbox.Client({ key: 'e5iqhmprars9are' });
 	client.authDriver(new Dropbox.AuthDriver.Popup({
-		receiverUrl: window.location.origin + '/oauth_receiver.html'
+		receiverUrl: window.location.origin + '/double_cards/oauth_receiver.html'
 	}));
 
 	var begin = 0;
