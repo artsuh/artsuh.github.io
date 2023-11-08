@@ -1,703 +1,1510 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Artyom Suhov CV (UTC+4)</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	padding-inline-start: 0;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-.page-description {
-    margin-bottom: 2em;
-}
-
-.simple-table {
-	margin-top: 1em;
-	font-size: 0.875rem;
-	empty-cells: show;
-}
-.simple-table td {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table th {
-	height: 29px;
-	min-width: 120px;
-}
-
-.simple-table-header-color {
-	background: rgb(247, 246, 243);
-	color: black;
-}
-.simple-table-header {
-	font-weight: 500;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	max-height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(120, 119, 116, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(159, 107, 83, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(217, 115, 13, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 145, 47, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(68, 131, 97, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(51, 126, 169, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(144, 101, 176, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(193, 76, 138, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(212, 76, 71, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-interactiveBlue { background-color: rgba(35, 131, 226, .07); }
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-.select-value-color-pageGlass { background-color: undefined; }
-.select-value-color-washGlass { background-color: undefined; }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="94811b16-9994-46d1-b17f-e97f6d280a90" class="page mono"><header><img class="page-cover-image" src="assets/IMG_20200615_140139.jpeg" style="object-position:center 54.48%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="assets/Screenshot_2022-04-25_at_16.57.43.png"/></div><h1 class="page-title">Artyom Suhov CV (UTC+4)</h1><p class="page-description"></p></header><div class="page-body"><blockquote id="0b2e21f6-633e-4737-8606-9352d64ca91d" class="">Hi! I am a software developer currently based in Asia.
-I have 10 years of experience in software development.
-My main focus is <strong>Android development</strong>.
-Graduated from <a href="http://en.penzgtu.ru/">Penza State Technological University</a> specializing in Computer Networks and Systems. 
-Have a lot of hobbies: game development, drawing, sport activities
-
-Easy-going.</blockquote><p id="54a09373-a8b7-453b-8ff9-cd61d6055403" class="">
-</p><ul id="6b70e2dd-254d-444d-8881-8857f3246d48" class="toggle"><li><details open=""><summary>Table of content</summary><nav id="5f794ec2-6931-4138-b3b2-85e16efcdc31" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#5c37e4ff-3630-4c6f-97df-3355ef113e59">☎️ Contact information</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d121108c-9b43-41a2-a30f-35e230da4068"><strong>👩🏻‍💻</strong> Work experience</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#b596fab7-44eb-4115-99f6-a43ac5c3ffb7">In companies</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e986f44c-ea86-412e-8583-81087b446e68">Android Engineer </a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#ce7f93d1-96e7-4cad-af03-f28ec59a47a2">Java and Android Engineer</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d5c259b6-c779-4bda-b661-45baabc891ec">Android Engineer</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#9a764b11-5870-4c40-a6a8-3ab1a3270f0b">Java, Android, Objective-C, PHP Developer</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#f1c2d724-98f2-433d-9cbc-d1cd3b013fe6">Freelance</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#e32f6c44-b403-4771-ad9b-7b90a707046a"><strong>Android VPN Application</strong></a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#7bc61ba6-2bb4-4a0c-8793-4865579e8b24">Pet Projects</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#cb8904e6-e2fa-4b8d-8e84-52f6c7da5403">Dali - Wallpaper App</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#4a8e28e9-7f65-468b-aaa0-33b5a15bdc67">Encyclopedia apps</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#30209f1c-b6ee-453e-87c4-e54dd4038d5a">🛠 Skills</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#05e47419-84d2-48b9-9dc3-d9c7343d7a8d">💻 Technology</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#b6e24e38-c7c7-4482-b3dd-481d459e7e0e">🗣 Languages</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#d61d8696-5018-41c9-8d54-6aa85a8ce91d">Russian 🇷🇺</a></div><div class="table_of_contents-item table_of_contents-indent-2"><a class="table_of_contents-link" href="#186d06c7-8001-46d9-a150-9d6dbf6822d3">English 🇬🇧🇺🇸</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#12eee673-db9b-4d26-8514-1d2a5f4caf16">📚 Education and courses</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c71683f3-8fed-491e-8473-e3346e2cba62">Penza State Technological University</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9fcae8b3-3982-4f33-b3a1-7b2d9459b6a2">SECON Conference</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#391b43b6-3d35-4e2e-9132-7ef701ae2a53">Podlodka Android Crew</a></div></nav><p id="cd3a99df-2287-4556-bc05-317fcf525bef" class="">
-</p></details></li></ul><h1 id="5c37e4ff-3630-4c6f-97df-3355ef113e59" class="">☎️ Contact information</h1><p id="3bfbaf23-c238-4ae0-acb2-1ec57ddbaaa9" class="">📫  <a href="mailto:artyom.suhov@gmail.com">artyom.suhov@gmail.com</a></p><p id="45c7a962-dc18-4852-b011-871fa0c89017" class="">✉️  <a href="https://t.me/artsuhov">Telegram</a></p><p id="f9588b15-9157-4818-83ef-6720f0dc6730" class="">🐦  <a href="https://twitter.com/artsuhov">Twitter</a></p><p id="8bf2b602-c280-421b-9416-9a2aa25c7ba8" class="">🔗  <a href="https://www.linkedin.com/in/artyom-sukhov-4a7a79124/">LinkedIn</a></p><p id="ae34a914-c735-406a-90af-a781c284cdc8" class="">🐙  <a href="https://github.com/artsuhov">Github</a></p><hr id="8d8acbdc-d08a-4d3e-a292-ce636eeef800"/><h1 id="d121108c-9b43-41a2-a30f-35e230da4068" class=""><strong>👩🏻‍💻</strong> Work experience</h1><h2 id="b596fab7-44eb-4115-99f6-a43ac5c3ffb7" class="">In companies</h2><h3 id="e986f44c-ea86-412e-8583-81087b446e68" class="">Android Engineer </h3><p id="46b8c98c-fef1-487c-a664-7f77f406c946" class=""><a href="https://belkacar.ru/">Belkacar</a></p><p id="1520c192-3da9-4b49-af89-59d5b990b657" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | Jul 2022 - Current Time</em></p><p id="ff26a21f-c843-4959-93c9-45907241fc12" class="">As Senior Android developer I work on developing an internal mobile application for refueling car-sharing vehicles. </p><p id="a5d898b9-992c-40d4-b4f0-2064c5faf8fc" class="">My responsibilities include implementing product features, fixing bugs, and actively participating in meetings with other team members such as backend developers, designers, product managers, and project managers.</p><p id="7c0de731-a92a-4db2-97b1-42a0115608ad" class="">In addition, I take initiative in suggesting new features and improvements. For instance, I proposed implementing media file compression before sending them from the client to the server, which significantly reduced storage costs for media files on the server. Furthermore, I introduced technical analytics into the project to track the performance of different areas within our application, identifying and addressing any bottlenecks or slow-performing components. </p><p id="7d20678d-af1c-421b-8f20-9804b6b5a765" class="">Also I have a junior developer under my supervision. The junior developer started as an intern and has grown into a competent junior developer under my guidance. Together, we collaborate on various tasks, ensuring the successful development and delivery of Android applications for the project.</p><p id="960fd0df-0bbc-4263-880d-54f38a66297b" class="">
-</p><p id="3c1aa562-d6af-4428-ab39-ac6b3a3484c9" class=""><a href="https://www.intermedia.com/">Intermedia</a></p><p id="3f03bafd-78fb-436c-9439-85c60070b546" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | </em>🗓️ <em>Aug 2020 - Jun 2022 (1 yrs 10 mos)</em></p><p id="e83ed0cd-c292-49e2-9151-ea4aaddc4b7f" class="">
-</p><p id="5e54c9f4-726c-46ec-9387-b85b2ab509d6" class="">I work in the Unite team that develops a collaboration application with the main functions of the messenger, call and voicemail.</p><p id="d1736ae8-0302-4af6-a1ad-32d9ece7a764" class="">My responsibilities include the designing and development of new features, testing coverages, fix bugs, writing design documents, research and development of features and improvements.</p><p id="6ab3d3fd-1ada-4ed1-a86c-b431488bb73c" class="">I participated in designing and development various features, e.g., feature-flags client system, mms chat attachments, gdpr agreement screen, etc. My duties included monitoing crashlytics for bugs (during the weekly vigil between teams).</p><p id="a4ca03db-3a9a-4bfb-a8f4-872d5d3cd08e" class="">Worked on Scrum methodology. Regular attended on daily sync, 2-week sprint, planning, grooming, retrospective. Two time per month synced with android teammates toshare knowledges, discuss codebase problems, listen to suggestions.</p><p id="e8e5bad3-9386-4fc0-a73f-cb146efe5d14" class="">I work in a team of 5+ android developers, 3+ QA engineers. We consistently interact with teams from other platforms (iOS, desktop), backend developers and design team. <strong>Update: </strong>our team has grown and now we have 3 feature teams and 1 core team. I work in one of the feature teams</p><p id="04bb90e9-f553-4d9b-aa00-3e0f67101fbf" class="">Main Technologies Used: Kotlin, Java, Dagger, RxJava, Retrofit, Cicerone, WorkManager, Room.</p><figure id="53f36f37-866f-4b0e-b905-ef264667fee5"><a href="https://play.google.com/store/apps/details?id=net.intermedia.mobile_callscape&amp;hl=en_US&amp;gl=US" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Intermedia Unite - Apps on Google Play</div><div class="bookmark-description">Download the Unite mobile app for use with Hosted PBX. The Unite mobile application transforms your mobile phone into an essential collaboration tool, making teamwork on-the-go easier than ever. Place and receive calls, see who is available, send chat and SMS messages, and manage voicemails all from one application - anytime, anywhere.</div></div><div class="bookmark-href"><img src="https://www.gstatic.com/android/market_images/web/favicon_v2.ico" class="icon bookmark-icon"/>https://play.google.com/store/apps/details?id=net.intermedia.mobile_callscape&amp;hl=en_US&amp;gl=US</div></div><img src="https://play-lh.googleusercontent.com/JX4vn7_cisptv15IMTo4NCoLFpjxWzDMMj8-Fs3UEzVofPUfyavAsAU80cnYVFVxSiW7" class="bookmark-image"/></a></figure><p id="093ce9ef-8e2a-47e6-81c0-aed08931c26e" class="">
-</p><h3 id="ce7f93d1-96e7-4cad-af03-f28ec59a47a2" class="">Java and Android Engineer</h3><p id="b97b8f5a-a9ba-42b1-abfa-47464eeffcb8" class=""><a href="https://www.linkedin.com/company/ugarov-tapcore-me/about/">Tapcore</a> | <a href="https://en.wikipedia.org/wiki/Airpush">Airpush</a> | <a href="https://airnow.com/">Airnow</a></p><p id="31ed75ee-6f69-4a18-96ca-480c4b89504a" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | </em>🗓️ <em>Apr 2017 – Feb 2020 (2 yrs 11 mos)</em></p><p id="11f2eb59-b90e-49bb-b268-459eeb98540d" class="">
-</p><p id="817eb085-ed0e-48fb-904b-6ab1e6e51ed0" class="">Participated in development of<strong> SDK </strong>with the main function of delivery and application of <strong>submodules </strong>to 3rd party apps. </p><p id="d8dac285-4ac2-4401-a60c-e703815b8b69" class="">Responsible for the development integration tools for the SDK and features for the submodules.</p><p id="1b14316e-811b-4b0a-8268-833ffba74d6f" class="">Developed and supported tool for the automatic integration of SDK into 3rd party applications.</p><p id="fb3fe92a-10d7-4f8a-913b-3183a07a70e4" class="">Developed plugins for integrating SDK into Unity, GameMaker.</p><p id="25300721-9df0-493b-9e38-bc976aa42e29" class="">Researched and developed various techniques for protecting android apps from hacking.</p><p id="da064591-3dd9-452a-84ef-3f781aac97d3" class="">Participated in the development of various products (submodules) for the platform:</p><ul id="e28e39e7-86b1-4ec4-a1d8-1864c5eebea4" class="toggle"><li><details open=""><summary>AirData</summary><p id="99a163c6-aa83-4d4c-adcf-a8034638bb85" class="">AirData is an easy way to leverage the data monetization market by collecting user and device data for direct transfer into the global data marketplace</p></details></li></ul><ul id="b5811800-0177-4651-828a-3c10e50c86b5" class="toggle"><li><details open=""><summary>AirProxy</summary><p id="a201788b-2430-4c59-b30a-2a946126b491" class="">AirProxy is an additional way to monetize your app. In general, it makes proxies from the devices of your users.</p></details></li></ul><ul id="42c5bfbb-2f83-4d64-9dc5-6f8020138c81" class="toggle"><li><details open=""><summary>AirPiracy</summary><p id="9e93159d-5a43-4ce0-8045-698866c07742" class="">AirPiracy is a way to detect and monetize pirated installations of your apps.</p></details></li></ul><p id="fb49a00c-4e25-4f18-b2bc-d3babbb48ce9" class="">Technologies used:</p><p id="58b1fa21-401a-4bd5-b8b9-6a0e98d380f7" class="">Languages: Java, Groovy, Smali, Go, C, bash, SQL</p><p id="696926a6-78a0-44d8-bc59-290a2b6a4f31" class="">Frameworks: Android Framework API</p><p id="c40d064f-5f08-429f-a2c6-7f2127841155" class="">Continue Integrations Software: Jenkins</p><p id="caf48e24-e475-4c2c-8e8e-47c8f7f3a3f5" class="">Databases: SQLite, worked a bit with ClickHouse via Redash</p><p id="ad27d80b-cad4-4f4f-b0f3-744844c8851e" class="">Design Patterns: MVP, MVC, different structural patterns like Proxy, Adapter, Decorator, Facade, Flyweight.</p><p id="e422b5bb-95dd-4c28-9a10-fba83aad6312" class="">Development methodology: Agile</p><p id="35717a9f-00f8-4597-a299-ab99325af6bb" class="">Task Manager, Progress tracking: Jira, Pipefy, Asana</p><figure id="21648eed-ea38-4693-992a-0ec4a236f053"><a href="https://airnow.com/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Integrated App Management Platform | Airnow | Airnow</div><div class="bookmark-description">Reach new audiences for your apps through the power of the Airnow App Management platform. Supercharge Your App Marketing Strategy. Monitor apps, benchmark competitors, understand market trends &amp; ASO fundamentals all in one Providing the most advanced targeting and optimization technology on the market. The future of mobile advertising.</div></div><div class="bookmark-href"><img src="https://airnow.com/assets/img/main/favicons/favicon-96x96.png" class="icon bookmark-icon"/>https://airnow.com/</div></div></a></figure><h3 id="d5c259b6-c779-4bda-b661-45baabc891ec" class="">Android Engineer</h3><p id="017e80f1-da29-4900-9ccc-3208b40477f0" class=""><a href="https://softwarecenter.ru/">SoftwareCenter</a></p><p id="9a1bdf50-b25e-4db3-bdce-46589f83e9a5" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | </em>🗓️<em> Jun 2016 – Mar 2017 (10 mos)</em></p><p id="d9320940-cf69-43b3-a45d-9187adde45bc" class="">
-</p><p id="9b9e00c6-4adb-4ade-8a87-d39d89a297b9" class="">Mobile application development.</p><p id="d5fe8bda-147a-4ca4-9270-d05a375294fa" class="">Mostly implemented MVP design pattern in development of each project.</p><p id="4d9450a3-db11-4664-9cbf-2923859e9e1f" class="">Technologic stack:</p><p id="c162fe92-c165-4315-be04-8176d42b60c0" class="">Languages: Java</p><p id="542efe4c-50b5-4202-a48b-d22a0bdee745" class="">Frameworks: Android Framework API</p><p id="f8f18c10-6125-4eb1-9c0f-de574eb08bdd" class="">Libs: OkHttp, Retrofit, RxAndroid, ButterKnife, Location Manager (GPS), Glide, GCM, jUnit, Moxy, Realm, etc</p><p id="5a1a3a09-d9e5-47e7-be70-d7a98a2febe6" class="">Databases: SQLite</p><p id="db7d4e02-c909-400d-b8dc-52c03922dddc" class="">Design Patterns: MVP.</p><p id="89263b15-08d6-48c8-b7ea-94042fe37b48" class="">Development methodology: Waterfall</p><p id="37bc9470-84f0-400f-afaa-ed53652a6410" class="">Task Manager, Progress tracking: Asana was used for tracking and reporting of the project</p><figure id="9921cd99-ea8a-4eb1-bb4b-588b89ad734f"><a href="https://softwarecenter.ru/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Центр Программного Обеспечения | Разработка мобильных приложений.</div><div class="bookmark-description">Проектирование и отрисовка интерфейсов приложений и сайтов с использованием последний тенденций дизайна</div></div><div class="bookmark-href">https://softwarecenter.ru/</div></div><img src="http://softwarecenter.ru/images/mail_logo.png" class="bookmark-image"/></a></figure><p id="79db61db-db32-4300-b539-a7cf98975934" class="">
-</p><h3 id="9a764b11-5870-4c40-a6a8-3ab1a3270f0b" class="">Java, Android, Objective-C, PHP Developer</h3><p id="ac16ff47-5e9d-4713-80a0-59280d0f45c9" class=""><a href="http://is2b.ru/">is2b</a></p><p id="c80896a2-e5a3-43f8-bef1-5865d775e50d" class="">⌛<em>Full-time | </em>🗺️<em> Penza | </em>🗓️<em> Jan 2012 – Feb 2014 (2 yrs 2 mos)</em></p><p id="181e3254-fbc9-4bde-ae8a-f33acf597f39" class="">
-</p><p id="2e326d5c-c7e4-4b1a-bbd8-f67c4ec23b60" class="">My first company. Gave me the basics and the opportunity to try completely different technologies.</p><p id="5403ff20-ac07-4f1c-8a42-5ce704e0a123" class="">Mobile and web application development.</p><p id="06f36c4e-3246-42cb-b9d1-8f85016ef980" class="">Web projects:</p><p id="3d6c7806-3285-45ed-bbda-babf7582e47e" class="">Languages: PHP, JavaScript</p><p id="5e55f5e3-d3be-4735-98ab-e78a3e4dfbdd" class="">Frameworks backend: cakePHP, Yii</p><p id="95ef9179-9d7e-4c2f-bcdb-d2d865a58251" class="">Frameworks frontend: jQuery, backbone</p><p id="ac06c387-3f05-4aab-b19c-ac894cd2bcb9" class="">Databases: MySQL, pma</p><p id="e4d45b57-e8b9-42ed-acd2-daf389d93e8d" class="">Design Patterns: MVC</p><p id="68c81361-3db7-4577-8a3a-bee65991b849" class="">Mobile projects</p><p id="8f78d1f3-41be-4ace-ad03-7317541a09ee" class="">Languages: Java, Objective-C, JavaScript</p><p id="e57ad078-4f7e-4b10-a5c1-0303b4cf0846" class="">Frameworks: Android framework, AppKit, PhoneGap (Cordova)</p><p id="920b5137-5848-477c-967d-b1b7a93005c7" class="">Databases: SQLite</p><p id="236654b6-fb0e-49af-b249-eb2c91ef7d65" class="">Design Patterns: MVP</p><p id="c740ffb0-dd25-4e34-a780-ecc451197c2b" class="">Development methodology: Waterfall</p><p id="7ecf7f6e-d301-4762-b586-18b000e7fab8" class="">Task Manager, Progress tracking: Custom</p><figure id="704fde45-1fdb-481f-b10c-bae94ccaa78d"><a href="http://is2b.ru/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Заказать мобильное приложение</div><div class="bookmark-description">Компания Информационные системы для бизнеса занимается разработкой интернет сайтов, сложных интернет сервисов, программ для портативных устройств. Мы разрабатываем системы автоматизации и эксклюзивные программные комплексы для повышения эффективности работы предприятий и качества обслуживания клиентов. У нас Вы можете заказать разработку сайта, заказать приложение для IOS и Android, систему автоматизации.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/</div></div><img src="http://is2b.ru/portfolios/1398445149_159_resized.jpg?1496737830" class="bookmark-image"/></a></figure><p id="af252a6d-e700-4cf7-ab7b-956f48c3de94" class="">Project:</p><figure id="84c530ad-851a-49f4-b29c-9414f78a5ff5"><a href="http://is2b.ru/is2b/portfolio/view/8" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Гид по Уфе под мобильное устройство на Android, IOS</div><div class="bookmark-description">Разработано мобильное приложение для платформ Android и IOS, представляющее собой платформу для проведения квестов. Приложение предназначено для участников и болельщиков Международных детских игр 2013 года, которые проходили в городе Уфа. Оно позволяет пройти несколько экскурсий по городу в игровой форме, пользуясь только мобильным телефоном. После загрузки приложения, пользователь выбирает экскурсию, которую желает пройти.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/is2b/portfolio/view/8</div></div></a></figure><figure id="d00face8-caf8-4f5b-91b6-b327390acfce"><a href="http://is2b.ru/is2b/portfolio/view/10" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">IPad программа для Mercedes</div><div class="bookmark-description">В сентябре - октябре 2013 года, в Санкт-Петербурге проходила презентация новой модели Mercedes S500. Для ознакомления диллеров с особенностями данного автомобиля в игровой форме, нами было разработано приложение для IPad.В каждом из 10 автомобилей был размещен IPad, на котором было запущено данное приложение.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/is2b/portfolio/view/10</div></div><img src="http://is2b.ru/portfolios/1382350357_880_resized.jpg?1496737808" class="bookmark-image"/></a></figure><figure id="a2aeeedd-b21d-421c-9fb8-66c2c1a58ab0"><a href="http://is2b.ru/is2b/portfolio/view/14" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Интеллектуальная игра</div><div class="bookmark-description">В декабре 2013 года, была разработана система интеллектуального казино, позволяющая автоматизировать проведение игр на подобие Брейн-Ринг. Система ведет статистику по командам, начисляет очки. Зрители могут наблюдать за ходом игры на отдельном большом мониторе.Система состоит из трех частей: Сервер Мобильное приложение Страница для отображения на телевизионном экранеОтличительной особенностью данной системы является применение серверной технологии NodeJS, позволяющей минимизировать время синхронизации компонентов системы, одновременно сократив нагрузку на сервер.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/is2b/portfolio/view/14</div></div><img src="http://is2b.ru/portfolios/1391161901_315_resized.jpg?1496737810" class="bookmark-image"/></a></figure><figure id="6871edb2-328d-4d3b-96ad-e97f0f20b462"><a href="http://is2b.ru/is2b/portfolio/view/31" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Мобильное приложение - квест</div><div class="bookmark-description">Компания Информационные системы для бизнеса занимается разработкой интернет сайтов, сложных интернет сервисов, программ для портативных устройств. Мы разрабатываем системы автоматизации и эксклюзивные программные комплексы для повышения эффективности работы предприятий и качества обслуживания клиентов. У нас Вы можете заказать разработку сайта, заказать приложение для IOS и Android, систему автоматизации.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/is2b/portfolio/view/31</div></div><img src="http://is2b.ru/portfolios/1415117959_825_resized.png?1496737840" class="bookmark-image"/></a></figure><figure id="25ebbe96-706a-46fd-955c-75579f869538"><a href="http://is2b.ru/is2b/portfolio/view/35" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Система управления логистикой Квестов</div><div class="bookmark-description">Административная часть системы позволяет управлять играми, проводимыми для каждого заказчика. Интерфейс редактирования каждой игры позволяет создавать задачи для команд, которые могут содержать видео, изображения, карты. К задачам можно прикреплять подсказки, каждая из которых может дополнительно содержать несколько вложений, аналогично задачам. Задачи объединяются в этапы. Консоль позволяет управлять списками команд и пользователей.На карте отображаются все перемещения команд.</div></div><div class="bookmark-href"><img src="http://is2b.ru/favicon.ico" class="icon bookmark-icon"/>http://is2b.ru/is2b/portfolio/view/35</div></div><img src="http://is2b.ru/portfolios/1436510967_174_resized.jpg?1496737852" class="bookmark-image"/></a></figure><h2 id="f1c2d724-98f2-433d-9cbc-d1cd3b013fe6" class="">Freelance</h2><h3 id="e32f6c44-b403-4771-ad9b-7b90a707046a" class=""><strong>Android VPN Application</strong></h3><p id="6773887b-048f-4804-83bc-c96eb1e0b053" class="">Feb 2020 – Mar 2020 (1 mos)</p><p id="90aa1d44-8816-4d7e-825a-beb95c1bdfaa" class="">Project description</p><p id="1a1ec940-b08a-4596-afd7-8c9596361874" class="">Description:</p><p id="f8168ede-7e04-44e7-847a-1949d201d4bb" class="">Super VPN 2020 - Free VPN for Android. </p><p id="32ed70e2-230e-4d6d-a70c-1646b959483d" class="">Stack:</p><p id="2c9e6720-e0a2-484f-84ba-721eaab9c55f" class="">Android, Kotlin, MVVM, Room, Coroutines, LiveData, Retrofit, Custom View, Google Play Billing, Admob</p><div id="d89c934f-2482-4014-834a-8860d5ac5334" class="column-list"><div id="7922066c-53dc-4d57-9733-230c36191f09" style="width:25%" class="column"><figure id="128f9dc2-2cea-4552-849a-ef11e5197032" class="image"><a href="assets/Untitled.png"><img style="width:429px" src="assets/Untitled.png"/></a></figure></div><div id="bb634dc4-3785-4e2d-bd6d-7a6395d10b62" style="width:25%" class="column"><figure id="d69a200e-de77-4a32-9ec3-d4411eed75ae" class="image"><a href="assets/Untitled%201.png"><img style="width:432px" src="assets/Untitled%201.png"/></a></figure></div><div id="fd870047-2f06-4aa4-8e07-946b455b42b8" style="width:25%" class="column"><figure id="f95baea7-f1ac-405c-be27-369e3e0a168d" class="image"><a href="assets/Untitled%202.png"><img style="width:432px" src="assets/Untitled%202.png"/></a></figure></div><div id="325dd659-b3c6-487d-858b-91b93bb0fdc7" style="width:25%" class="column"><figure id="6098270b-d71d-463d-8478-b7eb6743b481" class="image"><a href="assets/Untitled%203.png"><img style="width:432px" src="assets/Untitled%203.png"/></a></figure><p id="2ebe97e3-c5c5-4d3c-86bc-cf5e1fa4b599" class="">
-</p></div></div><figure id="695018d3-3f6b-4182-b850-52ca86aeaf9a"><a href="https://apkcombo.com/super-vpn-2020-fast-vpn-free-unlimited-proxy-vpn/com.vpn.proxy.master.fast.vpn.free.unlimited.proxy.secure.vpn/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://apkcombo.com/super-vpn-2020-fast-vpn-free-unlimited-proxy-vpn/com.vpn.proxy.master.fast.vpn.free.unlimited.proxy.secure.vpn/</div></div></a></figure><p id="1526ece8-6072-481c-8081-38a93af2226a" class="">
-</p><h2 id="7bc61ba6-2bb4-4a0c-8793-4865579e8b24" class="">Pet Projects</h2><h3 id="cb8904e6-e2fa-4b8d-8e84-52f6c7da5403" class="">Dali - Wallpaper App</h3><p id="a563e5ff-20f2-4194-8ef3-9c6c77a14f85" class="">Jan 2021 - Mar 2021 (2 mos)</p><p id="3f587da1-887e-4dbb-a608-e2e06b3f3c67" class="">Description:</p><p id="99600c05-4279-4c1a-929d-bde018585fb0" class="">Wallpaper app I did in my spare time with friends. My responsibilities includes: research and development new features, fix bugs. Also I participate in different organizational processes. </p><p id="aa4c18a6-93fa-4162-9d56-8130a39cad10" class="">Stack:</p><p id="f781e1b6-e630-4de7-9376-da6637a0c357" class="">Android, Kotlin, MVVM, Room, Coroutines, LiveData, LiveCycle, Retrofit, Google Play Billing, Admob</p><p id="8e335456-9a89-4e63-811c-3eb90038772e" class="">
-</p><figure id="4c160718-8d1d-4a45-8819-dd73415c1aa9"><a href="https://play.google.com/store/apps/details?id=com.cosmic.knockdown.cosmetician" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Dali - free 4k wallpapers - Apps on Google Play</div><div class="bookmark-description">Dali - is an application, where you can find lots of beautiful backgrounds, free 3D wallpapers and the best HD pictures for your android phone. Many people set wallpapers and themes to add personality and style to their smartphones. User-friendly interface and search by category will help you easily find and download the most suitable wallpaper for you.</div></div><div class="bookmark-href"><img src="https://www.gstatic.com/android/market_images/web/favicon_v2.ico" class="icon bookmark-icon"/>https://play.google.com/store/apps/details?id=com.cosmic.knockdown.cosmetician</div></div><img src="https://play-lh.googleusercontent.com/q5VI6XZ7GHtLCrWcZ_OYhsSaRDPOBPHfC7cBc4i2T65dslXf6Dm7w-qjQEZwr5ZvOjE=w600-h300-pc0xffffff-pd" class="bookmark-image"/></a></figure><p id="9f279da3-bebc-4dc5-ade0-7f8dc972b555" class="">
-</p><h3 id="4a8e28e9-7f65-468b-aaa0-33b5a15bdc67" class="">Encyclopedia apps</h3><p id="bd784284-af8d-49bd-b29e-3763be598ceb" class="">Mar 2017 - Apr 2017 (1 mos)</p><div id="a9d01ce0-2274-48ea-bcba-9d120af21316" class="column-list"><div id="031d2daf-9a9d-4778-a939-9f5c0c9c0217" style="width:25%" class="column"><figure id="e3d320ea-ca55-4bac-b9f1-83e178964ef0" class="image"><a href="assets/app-icon512_512.png"><img style="width:144px" src="assets/app-icon512_512.png"/></a></figure></div><div id="09d72d1e-8fe6-497e-adaa-7437214f7ccc" style="width:75%" class="column"><p id="9d688909-5d43-47f4-9710-8948bc0b512e" class="">Android Applications built on one template: Forest Surviver, Fitness Digest, Mind Training.</p><p id="f039d6a1-6a8b-4754-aa10-e566d5a95222" class="">One day I made an application for hiking lovers &quot;Forest Surviver&quot; and it had 1k installs, lol :) I didn&#x27;t promote it, but it warms my soul.</p><p id="9749b0a0-6544-4dc9-a89f-9fcc667d0a7e" class="">I proud of empty crash list, good solutions, etc. And I like icon I made for Forest Survive (but of course I have to improve it)</p></div></div><p id="974b3285-850d-4c2e-a6ee-196527803365" class="">
-</p><div id="0dc7b164-aa3b-4a03-a323-b5f7a8ee36a7" class="column-list"><div id="bed0fe4a-43b4-495b-bcf8-d4f682f71f7f" style="width:33.33333333333333%" class="column"><figure id="4b0b66ff-4556-4e34-afd8-1bae83a0520d" class="image"><a href="assets/Untitled%204.png"><img style="width:336px" src="assets/Untitled%204.png"/></a></figure></div><div id="691a9c2f-3c2a-4224-b553-19e097c5c20a" style="width:33.33333333333333%" class="column"><figure id="4ad717be-fe57-45ee-a369-11b3706294e6" class="image"><a href="assets/Untitled%205.png"><img style="width:432px" src="assets/Untitled%205.png"/></a></figure></div><div id="2641f7e1-abd7-467e-9964-fe8d384eba6f" style="width:33.33333333333333%" class="column"><p id="0829b804-e49e-45a6-99b3-2e1c2b04a08a" class="">
-</p></div></div><div id="55724627-1982-4576-9f06-36b8faedc86e" class="column-list"><div id="98179387-b733-4a65-a3a1-48e9062ee946" style="width:33.33333333333333%" class="column"><figure id="9ec96afd-c94f-4403-ab62-9aef7b628795" class="image"><a href="assets/Untitled%206.png"><img style="width:432px" src="assets/Untitled%206.png"/></a></figure></div><div id="487202ac-d953-4288-9824-1e41ed157e88" style="width:33.333333333333336%" class="column"><figure id="2c658e12-8bfa-490c-bf54-accccb4de76f" class="image"><a href="assets/Untitled%207.png"><img style="width:432px" src="assets/Untitled%207.png"/></a></figure></div><div id="fc4df874-afe1-425a-903f-ccc607f33b7a" style="width:33.333333333333336%" class="column"><p id="c08c716e-28b7-45a3-ad6f-475c390d29c3" class="">
-</p></div></div><p id="ad4b27d8-f560-4440-8e60-5d4046c1b2c4" class="">
-</p><div id="ee035900-2da7-468d-81ae-fc5ae5c20113" class="column-list"><div id="8f2d58ab-7e13-4a32-a4a0-bc750fb0fa33" style="width:6.25%" class="column"><figure id="1648d7bc-bee8-43c1-ae00-585a0c0acba1" class="image"><a href="assets/Untitled%208.png"><img style="width:75px" src="assets/Untitled%208.png"/></a></figure></div><div id="2b811876-c093-4dc0-8cc2-79a020381da5" style="width:93.75%" class="column"><figure id="9a8b42ef-34ff-4ef2-afeb-c49f25ad8c80"><a href="https://apkcombo.com/es-us/%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BB%D0%B5%D1%81%D1%83/com.cosmic.survive.forest/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://apkcombo.com/es-us/%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BB%D0%B5%D1%81%D1%83/com.cosmic.survive.forest/</div></div></a></figure></div></div><div id="760b3d9e-d287-47f9-9298-04782549c8ff" class="column-list"><div id="525989b9-fede-4f9a-b9c2-ee615f23ef9f" style="width:6.25%" class="column"><figure id="237d7452-8392-4593-a19d-1160efbacc79" class="image"><a href="assets/Untitled%209.png"><img style="width:75px" src="assets/Untitled%209.png"/></a></figure></div><div id="d92870d5-07ad-485d-a03c-d78c03a5f347" style="width:93.75%" class="column"><figure id="3aa30234-bf08-4418-a35a-5788749acc62"><a href="https://apkcombo.com/es-us/%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82/com.cosmic.fitness.digest/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://apkcombo.com/es-us/%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82/com.cosmic.fitness.digest/</div></div></a></figure></div></div><div id="dbc11792-55d6-4639-9c3f-fc1c8b4132ee" class="column-list"><div id="40a9e3c3-fac2-47ea-a47d-b0083a716357" style="width:6.25%" class="column"><figure id="3dd5bcb4-6704-4777-b738-467545a8d42b" class="image"><a href="assets/Untitled%2010.png"><img style="width:75px" src="assets/Untitled%2010.png"/></a></figure></div><div id="e47a1319-2881-41fa-8f11-e9f10227c3c8" style="width:93.75%" class="column"><figure id="aed74653-bc38-4b2c-a820-bbf68175e79d"><a href="https://apkcombo.com/es-us/%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/com.cosmic.smart.digest/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://apkcombo.com/es-us/%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/com.cosmic.smart.digest/</div></div></a></figure></div></div><hr id="acf2a2bc-390d-414a-a080-404375498827"/><h1 id="30209f1c-b6ee-453e-87c4-e54dd4038d5a" class="">🛠 Skills</h1><h2 id="05e47419-84d2-48b9-9dc3-d9c7343d7a8d" class="">💻 Technology</h2><p id="4859de19-de8f-4e9a-af04-cb7fa5db0369" class="">I use Kotlin in daily development, but not afraid of Java</p><p id="bf73526e-dfa4-412c-a5f7-3b71086c26e2" class="">Have experience with Dagger, RxJava, Coroutines, Retrofit, Moxy, Cecerone, Picasso, Lottie, etc</p><p id="12bb1d5c-d78c-4f85-8162-bee4d2510e5f" class="">❗Have experience with disassembling android apps. Can read and edit java byte code and Dalvik Bytecode in smali format. Also I can write pre-processing for them. It can be used when you want to add some code into application at compilation time.</p><p id="3ef0689b-87b1-499b-8d95-8d0314c58c5d" class="">Have experience with libGDX - cross-platform java game dev framework.</p><p id="c7a34b64-af69-494e-8dfa-376c7c240d8b" class="">Have experience in different design patterns</p><p id="49082383-e7a6-4c76-ad28-dccc5a1e2c92" class="">Have experience in clean architecture. Or to be more precise, its <a href="https://fernandocejas.com/blog/engineering/2014-09-03-architecting-android-the-clean-way/">adaptation for android by Fernando Cejas</a></p><p id="3154a798-f8cf-413a-ae19-922fdd39fd2c" class="">Have experience in MVP, MVC, MVVM</p><p id="aa7d82d7-02c8-45b3-90c7-a4cebdb5a8d3" class="">Respecting SOLID, <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">DRY</a>, KISS, <a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">YAGNI</a></p><p id="f08f6f3f-eb96-4473-94cb-64d477b58237" class="">I can write simple SQL to reach data from databases.</p><p id="b5677432-ea52-4db8-84d6-6aa04e5a97ab" class="">
-</p><ul id="f57385bc-2116-4e08-aaad-7b7ef0693880" class="toggle"><li><details open=""><summary>Bonus</summary><p id="e6efd887-b549-41ef-9413-490b7a2da7af" class="">Have experience in web development (backend and frontend). I developed backend on PHP with CakePhp framework. And for frontend development I used javascript with jQuery, twitter bootstrap.</p><p id="17d3963b-fb0e-4656-8e24-28a028244627" class="">
-</p><p id="a7c8165f-077e-4444-bc88-7aac5629d206" class="">Have experience in iOS development. I made several apps and games on objective-c with Cocos2d, WebKit, CloudKit, CocoaTouch frameworks.</p><p id="80baff66-427b-4682-8ba1-4f6fab152aa5" class="">
-</p><p id="655d22fb-2c86-4c57-9a6e-b30a88a326a3" class="">Have experience in Unity development. Have <a href="http://consoleassert.github.io/ssnhntrmstrd/">unfinished pet project</a></p></details></li></ul><hr id="48c49fd2-2d69-4e3e-8fe9-050098a8d04d"/><h2 id="b6e24e38-c7c7-4482-b3dd-481d459e7e0e" class="">🗣 Languages</h2><h3 id="d61d8696-5018-41c9-8d54-6aa85a8ce91d" class="">Russian 🇷🇺</h3><p id="a4e6e0b7-f4c6-4313-a46a-b243ce9751f5" class="">Native speaker</p><h3 id="186d06c7-8001-46d9-a150-9d6dbf6822d3" class="">English 🇬🇧🇺🇸</h3><p id="c95ba077-8e12-433d-93e7-f506d69adc80" class="">My level varies between B1 and B2 (Intermediate and Upper Intermediate). </p><p id="56b40810-7759-499a-868e-c5d4d3954502" class="">One day I passed interview which had a part of the language test at B2</p><hr id="c7d35d30-3ef3-49b1-a79a-d6de839288d8"/><h1 id="12eee673-db9b-4d26-8514-1d2a5f4caf16" class="">📚 Education and courses</h1><h2 id="c71683f3-8fed-491e-8473-e3346e2cba62" class="">Penza State Technological University</h2><p id="92ffa358-f8cf-4c30-aada-29a6c148a3ef" class="block-color-gray">Master&#x27;s Degree, Electrical Engineering &amp; Computer Science at Penza State Technological </p><p id="eb486e3d-c515-457e-9d62-3133c23304c2" class=""><em>Sep 2009 - Jul 2014</em></p><p id="b3dff7a4-437a-4f68-a0a4-346a04bc1bb5" class="">The theme of my thesis was the development of cross-platform client for an educational institution. Application was written on javascript and Cordova framework which wraps HTML/JavaScript app into a native container which can access the devices functions of several platform.</p><h2 id="9fcae8b3-3982-4f33-b3a1-7b2d9459b6a2" class="">SECON Conference</h2><p id="8dfabc37-8ac8-45ca-8129-c157531f90aa" class="">Participated as a listener in 2013, 2017, 2019.</p><h2 id="391b43b6-3d35-4e2e-9132-7ef701ae2a53" class="">Podlodka Android Crew</h2><p id="9bae21a3-81b4-461e-8bb2-4c6ca2248fcc" class="">Feb 2021 - Feb 2021 (2 weeks)</p><p id="9dc5d0b1-2fb8-444f-8299-3bf2147c21aa" class="">Participated as a listener. First week was about UI in Android. Second week was about algorithms.</p><p id="ead39973-6f3e-4c61-b41e-b66bee57c5c7" class="">Apr 2021 - Apr 2021 (2 weeks)</p><p id="919a5a78-48a1-40bd-a647-a69539ab0d79" class="">Participated as a listener. First week was about multithreading and concurrency. Second week was about jetpack.</p><p id="398bec7f-10d5-49fb-9a8e-4276f1e33b7a" class="">
-</p></div></article></body></html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Artyom Suhov CV (UTC+4)</title>
+	<style>
+		/* cspell:disable-file */
+		/* webkit printing magic: print all background colors */
+		html {
+			-webkit-print-color-adjust: exact;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-print-color-adjust: exact;
+		}
+
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		@media only screen {
+			body {
+				margin: 2em auto;
+				max-width: 900px;
+				color: rgb(55, 53, 47);
+			}
+		}
+
+		body {
+			line-height: 1.5;
+			white-space: pre-wrap;
+		}
+
+		a,
+		a.visited {
+			color: inherit;
+			text-decoration: underline;
+		}
+
+		.pdf-relative-link-path {
+			font-size: 80%;
+			color: #444;
+		}
+
+		h1,
+		h2,
+		h3 {
+			letter-spacing: -0.01em;
+			line-height: 1.2;
+			font-weight: 600;
+			margin-bottom: 0;
+		}
+
+		.page-title {
+			font-size: 2.5rem;
+			font-weight: 700;
+			margin-top: 0;
+			margin-bottom: 0.75em;
+		}
+
+		h1 {
+			font-size: 1.875rem;
+			margin-top: 1.875rem;
+		}
+
+		h2 {
+			font-size: 1.5rem;
+			margin-top: 1.5rem;
+		}
+
+		h3 {
+			font-size: 1.25rem;
+			margin-top: 1.25rem;
+		}
+
+		.source {
+			border: 1px solid #ddd;
+			border-radius: 3px;
+			padding: 1.5em;
+			word-break: break-all;
+		}
+
+		.callout {
+			border-radius: 3px;
+			padding: 1rem;
+		}
+
+		figure {
+			margin: 1.25em 0;
+			page-break-inside: avoid;
+		}
+
+		figcaption {
+			opacity: 0.5;
+			font-size: 85%;
+			margin-top: 0.5em;
+		}
+
+		mark {
+			background-color: transparent;
+		}
+
+		.indented {
+			padding-left: 1.5em;
+		}
+
+		hr {
+			background: transparent;
+			display: block;
+			width: 100%;
+			height: 1px;
+			visibility: visible;
+			border: none;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+		}
+
+		img {
+			max-width: 100%;
+		}
+
+		@media only print {
+			img {
+				max-height: 100vh;
+				object-fit: contain;
+			}
+		}
+
+		@page {
+			margin: 1in;
+		}
+
+		.collection-content {
+			font-size: 0.875rem;
+		}
+
+		.column-list {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.column {
+			padding: 0 1em;
+		}
+
+		.column:first-child {
+			padding-left: 0;
+		}
+
+		.column:last-child {
+			padding-right: 0;
+		}
+
+		.table_of_contents-item {
+			display: block;
+			font-size: 0.875rem;
+			line-height: 1.3;
+			padding: 0.125rem;
+		}
+
+		.table_of_contents-indent-1 {
+			margin-left: 1.5rem;
+		}
+
+		.table_of_contents-indent-2 {
+			margin-left: 3rem;
+		}
+
+		.table_of_contents-indent-3 {
+			margin-left: 4.5rem;
+		}
+
+		.table_of_contents-link {
+			text-decoration: none;
+			opacity: 0.7;
+			border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+		}
+
+		table,
+		th,
+		td {
+			border: 1px solid rgba(55, 53, 47, 0.09);
+			border-collapse: collapse;
+		}
+
+		table {
+			border-left: none;
+			border-right: none;
+		}
+
+		th,
+		td {
+			font-weight: normal;
+			padding: 0.25em 0.5em;
+			line-height: 1.5;
+			min-height: 1.5em;
+			text-align: left;
+		}
+
+		th {
+			color: rgba(55, 53, 47, 0.6);
+		}
+
+		ol,
+		ul {
+			margin: 0;
+			margin-block-start: 0.6em;
+			margin-block-end: 0.6em;
+		}
+
+		li>ol:first-child,
+		li>ul:first-child {
+			margin-block-start: 0.6em;
+		}
+
+		ul>li {
+			list-style: disc;
+		}
+
+		ul.to-do-list {
+			padding-inline-start: 0;
+		}
+
+		ul.to-do-list>li {
+			list-style: none;
+		}
+
+		.to-do-children-checked {
+			text-decoration: line-through;
+			opacity: 0.375;
+		}
+
+		ul.toggle>li {
+			list-style: none;
+		}
+
+		ul {
+			padding-inline-start: 1.7em;
+		}
+
+		ul>li {
+			padding-left: 0.1em;
+		}
+
+		ol {
+			padding-inline-start: 1.6em;
+		}
+
+		ol>li {
+			padding-left: 0.2em;
+		}
+
+		.mono ol {
+			padding-inline-start: 2em;
+		}
+
+		.mono ol>li {
+			text-indent: -0.4em;
+		}
+
+		.toggle {
+			padding-inline-start: 0em;
+			list-style-type: none;
+		}
+
+		/* Indent toggle children */
+		.toggle>li>details {
+			padding-left: 1.7em;
+		}
+
+		.toggle>li>details>summary {
+			margin-left: -1.1em;
+		}
+
+		.selected-value {
+			display: inline-block;
+			padding: 0 0.5em;
+			background: rgba(206, 205, 202, 0.5);
+			border-radius: 3px;
+			margin-right: 0.5em;
+			margin-top: 0.3em;
+			margin-bottom: 0.3em;
+			white-space: nowrap;
+		}
+
+		.collection-title {
+			display: inline-block;
+			margin-right: 1em;
+		}
+
+		.page-description {
+			margin-bottom: 2em;
+		}
+
+		.simple-table {
+			margin-top: 1em;
+			font-size: 0.875rem;
+			empty-cells: show;
+		}
+
+		.simple-table td {
+			height: 29px;
+			min-width: 120px;
+		}
+
+		.simple-table th {
+			height: 29px;
+			min-width: 120px;
+		}
+
+		.simple-table-header-color {
+			background: rgb(247, 246, 243);
+			color: black;
+		}
+
+		.simple-table-header {
+			font-weight: 500;
+		}
+
+		time {
+			opacity: 0.5;
+		}
+
+		.icon {
+			display: inline-block;
+			max-width: 1.2em;
+			max-height: 1.2em;
+			text-decoration: none;
+			vertical-align: text-bottom;
+			margin-right: 0.5em;
+		}
+
+		img.icon {
+			border-radius: 3px;
+		}
+
+		.user-icon {
+			width: 1.5em;
+			height: 1.5em;
+			border-radius: 100%;
+			margin-right: 0.5rem;
+		}
+
+		.user-icon-inner {
+			font-size: 0.8em;
+		}
+
+		.text-icon {
+			border: 1px solid #000;
+			text-align: center;
+		}
+
+		.page-cover-image {
+			display: block;
+			object-fit: cover;
+			width: 100%;
+			max-height: 30vh;
+		}
+
+		.page-header-icon {
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.page-header-icon-with-cover {
+			margin-top: -0.72em;
+			margin-left: 0.07em;
+		}
+
+		.page-header-icon img {
+			border-radius: 3px;
+		}
+
+		.link-to-page {
+			margin: 1em 0;
+			padding: 0;
+			border: none;
+			font-weight: 500;
+		}
+
+		p>.user {
+			opacity: 0.5;
+		}
+
+		td>.user,
+		td>time {
+			white-space: nowrap;
+		}
+
+		input[type="checkbox"] {
+			transform: scale(1.5);
+			margin-right: 0.6em;
+			vertical-align: middle;
+		}
+
+		p {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.image {
+			border: none;
+			margin: 1.5em 0;
+			padding: 0;
+			border-radius: 0;
+			text-align: center;
+		}
+
+		.code,
+		code {
+			background: rgba(135, 131, 120, 0.15);
+			border-radius: 3px;
+			padding: 0.2em 0.4em;
+			border-radius: 3px;
+			font-size: 85%;
+			tab-size: 2;
+		}
+
+		code {
+			color: #eb5757;
+		}
+
+		.code {
+			padding: 1.5em 1em;
+		}
+
+		.code-wrap {
+			white-space: pre-wrap;
+			word-break: break-all;
+		}
+
+		.code>code {
+			background: none;
+			padding: 0;
+			font-size: 100%;
+			color: inherit;
+		}
+
+		blockquote {
+			font-size: 1.25em;
+			margin: 1em 0;
+			padding-left: 1em;
+			border-left: 3px solid rgb(55, 53, 47);
+		}
+
+		.bookmark {
+			text-decoration: none;
+			max-height: 8em;
+			padding: 0;
+			display: flex;
+			width: 100%;
+			align-items: stretch;
+		}
+
+		.bookmark-title {
+			font-size: 0.85em;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			height: 1.75em;
+			white-space: nowrap;
+		}
+
+		.bookmark-text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.bookmark-info {
+			flex: 4 1 180px;
+			padding: 12px 14px 14px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		.bookmark-image {
+			width: 33%;
+			flex: 1 1 180px;
+			display: block;
+			position: relative;
+			object-fit: cover;
+			border-radius: 1px;
+		}
+
+		.bookmark-description {
+			color: rgba(55, 53, 47, 0.6);
+			font-size: 0.75em;
+			overflow: hidden;
+			max-height: 4.5em;
+			word-break: break-word;
+		}
+
+		.bookmark-href {
+			font-size: 0.75em;
+			margin-top: 0.25em;
+		}
+
+		.sans {
+			font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+
+		.code {
+			font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace;
+		}
+
+		.serif {
+			font-family: Lyon-Text, Georgia, ui-serif, serif;
+		}
+
+		.mono {
+			font-family: iawriter-mono, Nitti, Menlo, Courier, monospace;
+		}
+
+		.pdf .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .sans {
+			font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR';
+		}
+
+		.pdf .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .code {
+			font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.pdf .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .serif {
+			font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR';
+		}
+
+		.pdf .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP';
+		}
+
+		.pdf:lang(zh-CN) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC';
+		}
+
+		.pdf:lang(zh-TW) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC';
+		}
+
+		.pdf:lang(ko-KR) .mono {
+			font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR';
+		}
+
+		.highlight-default {
+			color: rgba(55, 53, 47, 1);
+		}
+
+		.highlight-gray {
+			color: rgba(120, 119, 116, 1);
+			fill: rgba(120, 119, 116, 1);
+		}
+
+		.highlight-brown {
+			color: rgba(159, 107, 83, 1);
+			fill: rgba(159, 107, 83, 1);
+		}
+
+		.highlight-orange {
+			color: rgba(217, 115, 13, 1);
+			fill: rgba(217, 115, 13, 1);
+		}
+
+		.highlight-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.highlight-teal {
+			color: rgba(68, 131, 97, 1);
+			fill: rgba(68, 131, 97, 1);
+		}
+
+		.highlight-blue {
+			color: rgba(51, 126, 169, 1);
+			fill: rgba(51, 126, 169, 1);
+		}
+
+		.highlight-purple {
+			color: rgba(144, 101, 176, 1);
+			fill: rgba(144, 101, 176, 1);
+		}
+
+		.highlight-pink {
+			color: rgba(193, 76, 138, 1);
+			fill: rgba(193, 76, 138, 1);
+		}
+
+		.highlight-red {
+			color: rgba(212, 76, 71, 1);
+			fill: rgba(212, 76, 71, 1);
+		}
+
+		.highlight-gray_background {
+			background: rgba(241, 241, 239, 1);
+		}
+
+		.highlight-brown_background {
+			background: rgba(244, 238, 238, 1);
+		}
+
+		.highlight-orange_background {
+			background: rgba(251, 236, 221, 1);
+		}
+
+		.highlight-yellow_background {
+			background: rgba(251, 243, 219, 1);
+		}
+
+		.highlight-teal_background {
+			background: rgba(237, 243, 236, 1);
+		}
+
+		.highlight-blue_background {
+			background: rgba(231, 243, 248, 1);
+		}
+
+		.highlight-purple_background {
+			background: rgba(244, 240, 247, 0.8);
+		}
+
+		.highlight-pink_background {
+			background: rgba(249, 238, 243, 0.8);
+		}
+
+		.highlight-red_background {
+			background: rgba(253, 235, 236, 1);
+		}
+
+		.block-color-default {
+			color: inherit;
+			fill: inherit;
+		}
+
+		.block-color-gray {
+			color: rgba(120, 119, 116, 1);
+			fill: rgba(120, 119, 116, 1);
+		}
+
+		.block-color-brown {
+			color: rgba(159, 107, 83, 1);
+			fill: rgba(159, 107, 83, 1);
+		}
+
+		.block-color-orange {
+			color: rgba(217, 115, 13, 1);
+			fill: rgba(217, 115, 13, 1);
+		}
+
+		.block-color-yellow {
+			color: rgba(203, 145, 47, 1);
+			fill: rgba(203, 145, 47, 1);
+		}
+
+		.block-color-teal {
+			color: rgba(68, 131, 97, 1);
+			fill: rgba(68, 131, 97, 1);
+		}
+
+		.block-color-blue {
+			color: rgba(51, 126, 169, 1);
+			fill: rgba(51, 126, 169, 1);
+		}
+
+		.block-color-purple {
+			color: rgba(144, 101, 176, 1);
+			fill: rgba(144, 101, 176, 1);
+		}
+
+		.block-color-pink {
+			color: rgba(193, 76, 138, 1);
+			fill: rgba(193, 76, 138, 1);
+		}
+
+		.block-color-red {
+			color: rgba(212, 76, 71, 1);
+			fill: rgba(212, 76, 71, 1);
+		}
+
+		.block-color-gray_background {
+			background: rgba(241, 241, 239, 1);
+		}
+
+		.block-color-brown_background {
+			background: rgba(244, 238, 238, 1);
+		}
+
+		.block-color-orange_background {
+			background: rgba(251, 236, 221, 1);
+		}
+
+		.block-color-yellow_background {
+			background: rgba(251, 243, 219, 1);
+		}
+
+		.block-color-teal_background {
+			background: rgba(237, 243, 236, 1);
+		}
+
+		.block-color-blue_background {
+			background: rgba(231, 243, 248, 1);
+		}
+
+		.block-color-purple_background {
+			background: rgba(244, 240, 247, 0.8);
+		}
+
+		.block-color-pink_background {
+			background: rgba(249, 238, 243, 0.8);
+		}
+
+		.block-color-red_background {
+			background: rgba(253, 235, 236, 1);
+		}
+
+		.select-value-color-interactiveBlue {
+			background-color: rgba(35, 131, 226, .07);
+		}
+
+		.select-value-color-pink {
+			background-color: rgba(245, 224, 233, 1);
+		}
+
+		.select-value-color-purple {
+			background-color: rgba(232, 222, 238, 1);
+		}
+
+		.select-value-color-green {
+			background-color: rgba(219, 237, 219, 1);
+		}
+
+		.select-value-color-gray {
+			background-color: rgba(227, 226, 224, 1);
+		}
+
+		.select-value-color-translucentGray {
+			background-color: rgba(255, 255, 255, 0.0375);
+		}
+
+		.select-value-color-orange {
+			background-color: rgba(250, 222, 201, 1);
+		}
+
+		.select-value-color-brown {
+			background-color: rgba(238, 224, 218, 1);
+		}
+
+		.select-value-color-red {
+			background-color: rgba(255, 226, 221, 1);
+		}
+
+		.select-value-color-yellow {
+			background-color: rgba(253, 236, 200, 1);
+		}
+
+		.select-value-color-blue {
+			background-color: rgba(211, 229, 239, 1);
+		}
+
+		.select-value-color-pageGlass {
+			background-color: undefined;
+		}
+
+		.select-value-color-washGlass {
+			background-color: undefined;
+		}
+
+		.checkbox {
+			display: inline-flex;
+			vertical-align: text-bottom;
+			width: 16;
+			height: 16;
+			background-size: 16px;
+			margin-left: 2px;
+			margin-right: 5px;
+		}
+
+		.checkbox-on {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+
+		.checkbox-off {
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+		}
+	</style>
+</head>
+
+<body>
+	<article id="94811b16-9994-46d1-b17f-e97f6d280a90" class="page mono">
+		<header><img class="page-cover-image" src="assets/IMG_20200615_140139.jpeg"
+				style="object-position:center 54.48%" />
+			<div class="page-header-icon page-header-icon-with-cover"><img class="icon"
+					src="assets/Screenshot_2022-04-25_at_16.57.43.png" /></div>
+			<h1 class="page-title">Artyom Suhov CV (UTC+4)</h1>
+			<p class="page-description"></p>
+		</header>
+		<div class="page-body">
+			<blockquote id="0b2e21f6-633e-4737-8606-9352d64ca91d" class="">Hi! I am a software developer currently based
+				in Asia.
+				I have 10 years of experience in software development.
+				My main focus is <strong>Android development</strong>.
+				Graduated from <a href="http://en.penzgtu.ru/">Penza State Technological University</a> specializing in
+				Computer Networks and Systems.
+				Have a lot of hobbies: game development, drawing, sport activities
+
+				Easy-going.</blockquote>
+			<p id="54a09373-a8b7-453b-8ff9-cd61d6055403" class="">
+			</p>
+			<ul id="6b70e2dd-254d-444d-8881-8857f3246d48" class="toggle">
+				<li>
+					<details open="">
+						<summary>Table of content</summary>
+						<nav id="5f794ec2-6931-4138-b3b2-85e16efcdc31" class="block-color-gray table_of_contents">
+							<div class="table_of_contents-item table_of_contents-indent-0"><a
+									class="table_of_contents-link" href="#5c37e4ff-3630-4c6f-97df-3355ef113e59">☎️
+									Contact information</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-0"><a
+									class="table_of_contents-link"
+									href="#d121108c-9b43-41a2-a30f-35e230da4068"><strong>👩🏻‍💻</strong> Work
+									experience</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#b596fab7-44eb-4115-99f6-a43ac5c3ffb7">In
+									companies</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#e986f44c-ea86-412e-8583-81087b446e68">Android
+									Engineer </a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#ce7f93d1-96e7-4cad-af03-f28ec59a47a2">Java and
+									Android Engineer</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#d5c259b6-c779-4bda-b661-45baabc891ec">Android
+									Engineer</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#9a764b11-5870-4c40-a6a8-3ab1a3270f0b">Java,
+									Android, Objective-C, PHP Developer</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link"
+									href="#f1c2d724-98f2-433d-9cbc-d1cd3b013fe6">Freelance</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link"
+									href="#e32f6c44-b403-4771-ad9b-7b90a707046a"><strong>Android VPN
+										Application</strong></a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#7bc61ba6-2bb4-4a0c-8793-4865579e8b24">Pet
+									Projects</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#cb8904e6-e2fa-4b8d-8e84-52f6c7da5403">Dali -
+									Wallpaper App</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link"
+									href="#4a8e28e9-7f65-468b-aaa0-33b5a15bdc67">Encyclopedia apps</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-0"><a
+									class="table_of_contents-link" href="#30209f1c-b6ee-453e-87c4-e54dd4038d5a">🛠
+									Skills</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#05e47419-84d2-48b9-9dc3-d9c7343d7a8d">💻
+									Technology</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#b6e24e38-c7c7-4482-b3dd-481d459e7e0e">🗣
+									Languages</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#d61d8696-5018-41c9-8d54-6aa85a8ce91d">Russian
+									🇷🇺</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-2"><a
+									class="table_of_contents-link" href="#186d06c7-8001-46d9-a150-9d6dbf6822d3">English
+									🇬🇧🇺🇸</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-0"><a
+									class="table_of_contents-link" href="#12eee673-db9b-4d26-8514-1d2a5f4caf16">📚
+									Education and courses</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#c71683f3-8fed-491e-8473-e3346e2cba62">Penza
+									State Technological University</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#9fcae8b3-3982-4f33-b3a1-7b2d9459b6a2">SECON
+									Conference</a></div>
+							<div class="table_of_contents-item table_of_contents-indent-1"><a
+									class="table_of_contents-link" href="#391b43b6-3d35-4e2e-9132-7ef701ae2a53">Podlodka
+									Android Crew</a></div>
+						</nav>
+						<p id="cd3a99df-2287-4556-bc05-317fcf525bef" class="">
+						</p>
+					</details>
+				</li>
+			</ul>
+			<h1 id="5c37e4ff-3630-4c6f-97df-3355ef113e59" class="">☎️ Contact information</h1>
+			<p id="3bfbaf23-c238-4ae0-acb2-1ec57ddbaaa9" class="">📫 <a
+					href="mailto:artyom.suhov@gmail.com">artyom.suhov@gmail.com</a></p>
+			<p id="45c7a962-dc18-4852-b011-871fa0c89017" class="">✉️ <a href="https://t.me/artsuhov">Telegram</a></p>
+			<p id="f9588b15-9157-4818-83ef-6720f0dc6730" class="">🐦 <a href="https://twitter.com/artsuhov">Twitter</a>
+			</p>
+			<p id="8bf2b602-c280-421b-9416-9a2aa25c7ba8" class="">🔗 <a
+					href="https://www.linkedin.com/in/artyom-sukhov-4a7a79124/">LinkedIn</a></p>
+			<p id="ae34a914-c735-406a-90af-a781c284cdc8" class="">🐙 <a href="https://github.com/artsuhov">Github</a>
+			</p>
+			<hr id="8d8acbdc-d08a-4d3e-a292-ce636eeef800" />
+			<h1 id="d121108c-9b43-41a2-a30f-35e230da4068" class=""><strong>👩🏻‍💻</strong> Work experience</h1>
+			<h2 id="b596fab7-44eb-4115-99f6-a43ac5c3ffb7" class="">In companies</h2>
+			<h3 id="e986f44c-ea86-412e-8583-81087b446e68" class="">Android Engineer </h3>
+			<p id="46b8c98c-fef1-487c-a664-7f77f406c946" class=""><a href="https://belkacar.ru/">Belkacar</a></p>
+			<p id="1520c192-3da9-4b49-af89-59d5b990b657" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | Jul 2022 -
+					Current Time</em></p>
+			<p id="ff26a21f-c843-4959-93c9-45907241fc12" class="">As Senior Android developer I work on developing an
+				internal mobile application for refueling car-sharing vehicles. </p>
+			<p id="a5d898b9-992c-40d4-b4f0-2064c5faf8fc" class="">My responsibilities include implementing product
+				features, fixing bugs, and actively participating in meetings with other team members such as backend
+				developers, designers, product managers, and project managers.</p>
+			<p id="7c0de731-a92a-4db2-97b1-42a0115608ad" class="">In addition, I take initiative in suggesting new
+				features and improvements. For instance, I proposed implementing media file compression before sending
+				them from the client to the server, which significantly reduced storage costs for media files on the
+				server. Furthermore, I introduced technical analytics into the project to track the performance of
+				different areas within our application, identifying and addressing any bottlenecks or slow-performing
+				components. </p>
+			<p id="7d20678d-af1c-421b-8f20-9804b6b5a765" class="">Also I have a junior developer under my supervision.
+				The junior developer started as an intern and has grown into a competent junior developer under my
+				guidance. Together, we collaborate on various tasks, ensuring the successful development and delivery of
+				Android applications for the project.</p>
+			<p id="960fd0df-0bbc-4263-880d-54f38a66297b" class="">
+			</p>
+			<p id="3c1aa562-d6af-4428-ab39-ac6b3a3484c9" class=""><a href="https://www.intermedia.com/">Intermedia</a>
+			</p>
+			<p id="3f03bafd-78fb-436c-9439-85c60070b546" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | </em>🗓️
+				<em>Aug 2020 - Jun 2022 (1 yrs 10 mos)</em></p>
+			<p id="e83ed0cd-c292-49e2-9151-ea4aaddc4b7f" class="">
+			</p>
+			<p id="5e54c9f4-726c-46ec-9387-b85b2ab509d6" class="">I work in the Unite team that develops a collaboration
+				application with the main functions of the messenger, call and voicemail.</p>
+			<p id="d1736ae8-0302-4af6-a1ad-32d9ece7a764" class="">My responsibilities include the designing and
+				development of new features, testing coverages, fix bugs, writing design documents, research and
+				development of features and improvements.</p>
+			<p id="6ab3d3fd-1ada-4ed1-a86c-b431488bb73c" class="">I participated in designing and development various
+				features, e.g., feature-flags client system, mms chat attachments, gdpr agreement screen, etc. My duties
+				included monitoing crashlytics for bugs (during the weekly vigil between teams).</p>
+			<p id="a4ca03db-3a9a-4bfb-a8f4-872d5d3cd08e" class="">Worked on Scrum methodology. Regular attended on daily
+				sync, 2-week sprint, planning, grooming, retrospective. Two time per month synced with android teammates
+				toshare knowledges, discuss codebase problems, listen to suggestions.</p>
+			<p id="e8e5bad3-9386-4fc0-a73f-cb146efe5d14" class="">I work in a team of 5+ android developers, 3+ QA
+				engineers. We consistently interact with teams from other platforms (iOS, desktop), backend developers
+				and design team. <strong>Update: </strong>our team has grown and now we have 3 feature teams and 1 core
+				team. I work in one of the feature teams</p>
+			<p id="04bb90e9-f553-4d9b-aa00-3e0f67101fbf" class="">Main Technologies Used: Kotlin, Java, Dagger, RxJava,
+				Retrofit, Cicerone, WorkManager, Room.</p>
+			<figure id="53f36f37-866f-4b0e-b905-ef264667fee5"><a
+					href="https://play.google.com/store/apps/details?id=net.intermedia.mobile_callscape&amp;hl=en_US&amp;gl=US"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Intermedia Unite - Apps on Google Play</div>
+							<div class="bookmark-description">Download the Unite mobile app for use with Hosted PBX. The
+								Unite mobile application transforms your mobile phone into an essential collaboration
+								tool, making teamwork on-the-go easier than ever. Place and receive calls, see who is
+								available, send chat and SMS messages, and manage voicemails all from one application -
+								anytime, anywhere.</div>
+						</div>
+						<div class="bookmark-href"><img
+								src="https://www.gstatic.com/android/market_images/web/favicon_v2.ico"
+								class="icon bookmark-icon" />https://play.google.com/store/apps/details?id=net.intermedia.mobile_callscape&amp;hl=en_US&amp;gl=US
+						</div>
+					</div><img
+						src="https://play-lh.googleusercontent.com/JX4vn7_cisptv15IMTo4NCoLFpjxWzDMMj8-Fs3UEzVofPUfyavAsAU80cnYVFVxSiW7"
+						class="bookmark-image" />
+				</a></figure>
+			<p id="093ce9ef-8e2a-47e6-81c0-aed08931c26e" class="">
+			</p>
+			<h3 id="ce7f93d1-96e7-4cad-af03-f28ec59a47a2" class="">Java and Android Engineer</h3>
+			<p id="b97b8f5a-a9ba-42b1-abfa-47464eeffcb8" class=""><a
+					href="https://www.linkedin.com/company/ugarov-tapcore-me/about/">Tapcore</a> | <a
+					href="https://en.wikipedia.org/wiki/Airpush">Airpush</a> | <a href="https://airnow.com/">Airnow</a>
+			</p>
+			<p id="31ed75ee-6f69-4a18-96ca-480c4b89504a" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work | </em>🗓️
+				<em>Apr 2017 – Feb 2020 (2 yrs 11 mos)</em></p>
+			<p id="11f2eb59-b90e-49bb-b268-459eeb98540d" class="">
+			</p>
+			<p id="817eb085-ed0e-48fb-904b-6ab1e6e51ed0" class="">Participated in development of<strong> SDK
+				</strong>with the main function of delivery and application of <strong>submodules </strong>to 3rd party
+				apps. </p>
+			<p id="d8dac285-4ac2-4401-a60c-e703815b8b69" class="">Responsible for the development integration tools for
+				the SDK and features for the submodules.</p>
+			<p id="1b14316e-811b-4b0a-8268-833ffba74d6f" class="">Developed and supported tool for the automatic
+				integration of SDK into 3rd party applications.</p>
+			<p id="fb3fe92a-10d7-4f8a-913b-3183a07a70e4" class="">Developed plugins for integrating SDK into Unity,
+				GameMaker.</p>
+			<p id="25300721-9df0-493b-9e38-bc976aa42e29" class="">Researched and developed various techniques for
+				protecting android apps from hacking.</p>
+			<p id="da064591-3dd9-452a-84ef-3f781aac97d3" class="">Participated in the development of various products
+				(submodules) for the platform:</p>
+			<ul id="e28e39e7-86b1-4ec4-a1d8-1864c5eebea4" class="toggle">
+				<li>
+					<details open="">
+						<summary>AirData</summary>
+						<p id="99a163c6-aa83-4d4c-adcf-a8034638bb85" class="">AirData is an easy way to leverage the
+							data monetization market by collecting user and device data for direct transfer into the
+							global data marketplace</p>
+					</details>
+				</li>
+			</ul>
+			<ul id="b5811800-0177-4651-828a-3c10e50c86b5" class="toggle">
+				<li>
+					<details open="">
+						<summary>AirProxy</summary>
+						<p id="a201788b-2430-4c59-b30a-2a946126b491" class="">AirProxy is an additional way to monetize
+							your app. In general, it makes proxies from the devices of your users.</p>
+					</details>
+				</li>
+			</ul>
+			<ul id="42c5bfbb-2f83-4d64-9dc5-6f8020138c81" class="toggle">
+				<li>
+					<details open="">
+						<summary>AirPiracy</summary>
+						<p id="9e93159d-5a43-4ce0-8045-698866c07742" class="">AirPiracy is a way to detect and monetize
+							pirated installations of your apps.</p>
+					</details>
+				</li>
+			</ul>
+			<p id="fb49a00c-4e25-4f18-b2bc-d3babbb48ce9" class="">Technologies used:</p>
+			<p id="58b1fa21-401a-4bd5-b8b9-6a0e98d380f7" class="">Languages: Java, Groovy, Smali, Go, C, bash, SQL</p>
+			<p id="696926a6-78a0-44d8-bc59-290a2b6a4f31" class="">Frameworks: Android Framework API</p>
+			<p id="c40d064f-5f08-429f-a2c6-7f2127841155" class="">Continue Integrations Software: Jenkins</p>
+			<p id="caf48e24-e475-4c2c-8e8e-47c8f7f3a3f5" class="">Databases: SQLite, worked a bit with ClickHouse via
+				Redash</p>
+			<p id="ad27d80b-cad4-4f4f-b0f3-744844c8851e" class="">Design Patterns: MVP, MVC, different structural
+				patterns like Proxy, Adapter, Decorator, Facade, Flyweight.</p>
+			<p id="e422b5bb-95dd-4c28-9a10-fba83aad6312" class="">Development methodology: Agile</p>
+			<p id="35717a9f-00f8-4597-a299-ab99325af6bb" class="">Task Manager, Progress tracking: Jira, Pipefy, Asana
+			</p>
+			<figure id="21648eed-ea38-4693-992a-0ec4a236f053"><a href="https://airnow.com/" class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Integrated App Management Platform | Airnow | Airnow</div>
+							<div class="bookmark-description">Reach new audiences for your apps through the power of the
+								Airnow App Management platform. Supercharge Your App Marketing Strategy. Monitor apps,
+								benchmark competitors, understand market trends &amp; ASO fundamentals all in one
+								Providing the most advanced targeting and optimization technology on the market. The
+								future of mobile advertising.</div>
+						</div>
+						<div class="bookmark-href"><img
+								src="https://airnow.com/assets/img/main/favicons/favicon-96x96.png"
+								class="icon bookmark-icon" />https://airnow.com/</div>
+					</div>
+				</a></figure>
+			<h3 id="d5c259b6-c779-4bda-b661-45baabc891ec" class="">Android Engineer</h3>
+			<p id="017e80f1-da29-4900-9ccc-3208b40477f0" class=""><a
+					href="https://softwarecenter.ru/">SoftwareCenter</a></p>
+			<p id="9a1bdf50-b25e-4db3-bdce-46589f83e9a5" class="">⌛<em>Full-time | </em>🗺️ <em>Remote Work |
+				</em>🗓️<em> Jun 2016 – Mar 2017 (10 mos)</em></p>
+			<p id="d9320940-cf69-43b3-a45d-9187adde45bc" class="">
+			</p>
+			<p id="9b9e00c6-4adb-4ade-8a87-d39d89a297b9" class="">Mobile application development.</p>
+			<p id="d5fe8bda-147a-4ca4-9270-d05a375294fa" class="">Mostly implemented MVP design pattern in development
+				of each project.</p>
+			<p id="4d9450a3-db11-4664-9cbf-2923859e9e1f" class="">Technologic stack:</p>
+			<p id="c162fe92-c165-4315-be04-8176d42b60c0" class="">Languages: Java</p>
+			<p id="542efe4c-50b5-4202-a48b-d22a0bdee745" class="">Frameworks: Android Framework API</p>
+			<p id="f8f18c10-6125-4eb1-9c0f-de574eb08bdd" class="">Libs: OkHttp, Retrofit, RxAndroid, ButterKnife,
+				Location Manager (GPS), Glide, GCM, jUnit, Moxy, Realm, etc</p>
+			<p id="5a1a3a09-d9e5-47e7-be70-d7a98a2febe6" class="">Databases: SQLite</p>
+			<p id="db7d4e02-c909-400d-b8dc-52c03922dddc" class="">Design Patterns: MVP.</p>
+			<p id="89263b15-08d6-48c8-b7ea-94042fe37b48" class="">Development methodology: Waterfall</p>
+			<p id="37bc9470-84f0-400f-afaa-ed53652a6410" class="">Task Manager, Progress tracking: Asana was used for
+				tracking and reporting of the project</p>
+			<figure id="9921cd99-ea8a-4eb1-bb4b-588b89ad734f"><a href="https://softwarecenter.ru/"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Центр Программного Обеспечения | Разработка мобильных
+								приложений.</div>
+							<div class="bookmark-description">Проектирование и отрисовка интерфейсов приложений и сайтов
+								с использованием последний тенденций дизайна</div>
+						</div>
+						<div class="bookmark-href">https://softwarecenter.ru/</div>
+					</div><img src="http://softwarecenter.ru/images/mail_logo.png" class="bookmark-image" />
+				</a></figure>
+			<p id="79db61db-db32-4300-b539-a7cf98975934" class="">
+			</p>
+			<h3 id="9a764b11-5870-4c40-a6a8-3ab1a3270f0b" class="">Java, Android, Objective-C, PHP Developer</h3>
+			<p id="ac16ff47-5e9d-4713-80a0-59280d0f45c9" class=""><a href="http://is2b.ru/">is2b</a></p>
+			<p id="c80896a2-e5a3-43f8-bef1-5865d775e50d" class="">⌛<em>Full-time | </em>🗺️<em> Penza | </em>🗓️<em> Jan
+					2012 – Feb 2014 (2 yrs 2 mos)</em></p>
+			<p id="181e3254-fbc9-4bde-ae8a-f33acf597f39" class="">
+			</p>
+			<p id="2e326d5c-c7e4-4b1a-bbd8-f67c4ec23b60" class="">My first company. Gave me the basics and the
+				opportunity to try completely different technologies.</p>
+			<p id="5403ff20-ac07-4f1c-8a42-5ce704e0a123" class="">Mobile and web application development.</p>
+			<p id="06f36c4e-3246-42cb-b9d1-8f85016ef980" class="">Web projects:</p>
+			<p id="3d6c7806-3285-45ed-bbda-babf7582e47e" class="">Languages: PHP, JavaScript</p>
+			<p id="5e55f5e3-d3be-4735-98ab-e78a3e4dfbdd" class="">Frameworks backend: cakePHP, Yii</p>
+			<p id="95ef9179-9d7e-4c2f-bcdb-d2d865a58251" class="">Frameworks frontend: jQuery, backbone</p>
+			<p id="ac06c387-3f05-4aab-b19c-ac894cd2bcb9" class="">Databases: MySQL, pma</p>
+			<p id="e4d45b57-e8b9-42ed-acd2-daf389d93e8d" class="">Design Patterns: MVC</p>
+			<p id="68c81361-3db7-4577-8a3a-bee65991b849" class="">Mobile projects</p>
+			<p id="8f78d1f3-41be-4ace-ad03-7317541a09ee" class="">Languages: Java, Objective-C, JavaScript</p>
+			<p id="e57ad078-4f7e-4b10-a5c1-0303b4cf0846" class="">Frameworks: Android framework, AppKit, PhoneGap
+				(Cordova)</p>
+			<p id="920b5137-5848-477c-967d-b1b7a93005c7" class="">Databases: SQLite</p>
+			<p id="236654b6-fb0e-49af-b249-eb2c91ef7d65" class="">Design Patterns: MVP</p>
+			<p id="c740ffb0-dd25-4e34-a780-ecc451197c2b" class="">Development methodology: Waterfall</p>
+			<p id="7ecf7f6e-d301-4762-b586-18b000e7fab8" class="">Task Manager, Progress tracking: Custom</p>
+			<figure id="704fde45-1fdb-481f-b10c-bae94ccaa78d"><a href="http://is2b.ru/" class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Заказать мобильное приложение</div>
+							<div class="bookmark-description">Компания Информационные системы для бизнеса занимается
+								разработкой интернет сайтов, сложных интернет сервисов, программ для портативных
+								устройств. Мы разрабатываем системы автоматизации и эксклюзивные программные комплексы
+								для повышения эффективности работы предприятий и качества обслуживания клиентов. У нас
+								Вы можете заказать разработку сайта, заказать приложение для IOS и Android, систему
+								автоматизации.</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/</div>
+					</div><img src="http://is2b.ru/portfolios/1398445149_159_resized.jpg?1496737830"
+						class="bookmark-image" />
+				</a></figure>
+			<p id="af252a6d-e700-4cf7-ab7b-956f48c3de94" class="">Project:</p>
+			<figure id="84c530ad-851a-49f4-b29c-9414f78a5ff5"><a href="http://is2b.ru/is2b/portfolio/view/8"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Гид по Уфе под мобильное устройство на Android, IOS</div>
+							<div class="bookmark-description">Разработано мобильное приложение для платформ Android и
+								IOS, представляющее собой платформу для проведения квестов. Приложение предназначено для
+								участников и болельщиков Международных детских игр 2013 года, которые проходили в городе
+								Уфа. Оно позволяет пройти несколько экскурсий по городу в игровой форме, пользуясь
+								только мобильным телефоном. После загрузки приложения, пользователь выбирает экскурсию,
+								которую желает пройти.</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/is2b/portfolio/view/8</div>
+					</div>
+				</a></figure>
+			<figure id="d00face8-caf8-4f5b-91b6-b327390acfce"><a href="http://is2b.ru/is2b/portfolio/view/10"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">IPad программа для Mercedes</div>
+							<div class="bookmark-description">В сентябре - октябре 2013 года, в Санкт-Петербурге
+								проходила презентация новой модели Mercedes S500. Для ознакомления диллеров с
+								особенностями данного автомобиля в игровой форме, нами было разработано приложение для
+								IPad.В каждом из 10 автомобилей был размещен IPad, на котором было запущено данное
+								приложение.</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/is2b/portfolio/view/10</div>
+					</div><img src="http://is2b.ru/portfolios/1382350357_880_resized.jpg?1496737808"
+						class="bookmark-image" />
+				</a></figure>
+			<figure id="a2aeeedd-b21d-421c-9fb8-66c2c1a58ab0"><a href="http://is2b.ru/is2b/portfolio/view/14"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Интеллектуальная игра</div>
+							<div class="bookmark-description">В декабре 2013 года, была разработана система
+								интеллектуального казино, позволяющая автоматизировать проведение игр на подобие
+								Брейн-Ринг. Система ведет статистику по командам, начисляет очки. Зрители могут
+								наблюдать за ходом игры на отдельном большом мониторе.Система состоит из трех частей:
+								Сервер Мобильное приложение Страница для отображения на телевизионном
+								экранеОтличительной особенностью данной системы является применение серверной технологии
+								NodeJS, позволяющей минимизировать время синхронизации компонентов системы, одновременно
+								сократив нагрузку на сервер.</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/is2b/portfolio/view/14</div>
+					</div><img src="http://is2b.ru/portfolios/1391161901_315_resized.jpg?1496737810"
+						class="bookmark-image" />
+				</a></figure>
+			<figure id="6871edb2-328d-4d3b-96ad-e97f0f20b462"><a href="http://is2b.ru/is2b/portfolio/view/31"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Мобильное приложение - квест</div>
+							<div class="bookmark-description">Компания Информационные системы для бизнеса занимается
+								разработкой интернет сайтов, сложных интернет сервисов, программ для портативных
+								устройств. Мы разрабатываем системы автоматизации и эксклюзивные программные комплексы
+								для повышения эффективности работы предприятий и качества обслуживания клиентов. У нас
+								Вы можете заказать разработку сайта, заказать приложение для IOS и Android, систему
+								автоматизации.</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/is2b/portfolio/view/31</div>
+					</div><img src="http://is2b.ru/portfolios/1415117959_825_resized.png?1496737840"
+						class="bookmark-image" />
+				</a></figure>
+			<figure id="25ebbe96-706a-46fd-955c-75579f869538"><a href="http://is2b.ru/is2b/portfolio/view/35"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Система управления логистикой Квестов</div>
+							<div class="bookmark-description">Административная часть системы позволяет управлять играми,
+								проводимыми для каждого заказчика. Интерфейс редактирования каждой игры позволяет
+								создавать задачи для команд, которые могут содержать видео, изображения, карты. К
+								задачам можно прикреплять подсказки, каждая из которых может дополнительно содержать
+								несколько вложений, аналогично задачам. Задачи объединяются в этапы. Консоль позволяет
+								управлять списками команд и пользователей.На карте отображаются все перемещения команд.
+							</div>
+						</div>
+						<div class="bookmark-href"><img src="http://is2b.ru/favicon.ico"
+								class="icon bookmark-icon" />http://is2b.ru/is2b/portfolio/view/35</div>
+					</div><img src="http://is2b.ru/portfolios/1436510967_174_resized.jpg?1496737852"
+						class="bookmark-image" />
+				</a></figure>
+			<h2 id="f1c2d724-98f2-433d-9cbc-d1cd3b013fe6" class="">Freelance</h2>
+			<h3 id="e32f6c44-b403-4771-ad9b-7b90a707046a" class=""><strong>Android VPN Application</strong></h3>
+			<p id="6773887b-048f-4804-83bc-c96eb1e0b053" class="">Feb 2020 – Mar 2020 (1 mos)</p>
+			<p id="90aa1d44-8816-4d7e-825a-beb95c1bdfaa" class="">Project description</p>
+			<p id="1a1ec940-b08a-4596-afd7-8c9596361874" class="">Description:</p>
+			<p id="f8168ede-7e04-44e7-847a-1949d201d4bb" class="">Super VPN 2020 - Free VPN for Android. </p>
+			<p id="32ed70e2-230e-4d6d-a70c-1646b959483d" class="">Stack:</p>
+			<p id="2c9e6720-e0a2-484f-84ba-721eaab9c55f" class="">Android, Kotlin, MVVM, Room, Coroutines, LiveData,
+				Retrofit, Custom View, Google Play Billing, Admob</p>
+			<div id="d89c934f-2482-4014-834a-8860d5ac5334" class="column-list">
+				<div id="7922066c-53dc-4d57-9733-230c36191f09" style="width:25%" class="column">
+					<figure id="128f9dc2-2cea-4552-849a-ef11e5197032" class="image"><a href="assets/Untitled.png"><img
+								style="width:429px" src="assets/Untitled.png" /></a></figure>
+				</div>
+				<div id="bb634dc4-3785-4e2d-bd6d-7a6395d10b62" style="width:25%" class="column">
+					<figure id="d69a200e-de77-4a32-9ec3-d4411eed75ae" class="image"><a
+							href="assets/Untitled%201.png"><img style="width:432px" src="assets/Untitled%201.png" /></a>
+					</figure>
+				</div>
+				<div id="fd870047-2f06-4aa4-8e07-946b455b42b8" style="width:25%" class="column">
+					<figure id="f95baea7-f1ac-405c-be27-369e3e0a168d" class="image"><a
+							href="assets/Untitled%202.png"><img style="width:432px" src="assets/Untitled%202.png" /></a>
+					</figure>
+				</div>
+				<div id="325dd659-b3c6-487d-858b-91b93bb0fdc7" style="width:25%" class="column">
+					<figure id="6098270b-d71d-463d-8478-b7eb6743b481" class="image"><a
+							href="assets/Untitled%203.png"><img style="width:432px" src="assets/Untitled%203.png" /></a>
+					</figure>
+					<p id="2ebe97e3-c5c5-4d3c-86bc-cf5e1fa4b599" class="">
+					</p>
+				</div>
+			</div>
+			<figure id="695018d3-3f6b-4182-b850-52ca86aeaf9a"><a
+					href="https://apkcombo.com/super-vpn-2020-fast-vpn-free-unlimited-proxy-vpn/com.vpn.proxy.master.fast.vpn.free.unlimited.proxy.secure.vpn/"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title"></div>
+						</div>
+						<div class="bookmark-href">
+							https://apkcombo.com/super-vpn-2020-fast-vpn-free-unlimited-proxy-vpn/com.vpn.proxy.master.fast.vpn.free.unlimited.proxy.secure.vpn/
+						</div>
+					</div>
+				</a></figure>
+			<p id="1526ece8-6072-481c-8081-38a93af2226a" class="">
+			</p>
+			<h2 id="7bc61ba6-2bb4-4a0c-8793-4865579e8b24" class="">Pet Projects</h2>
+			<h3 id="cb8904e6-e2fa-4b8d-8e84-52f6c7da5403" class="">Dali - Wallpaper App</h3>
+			<p id="a563e5ff-20f2-4194-8ef3-9c6c77a14f85" class="">Jan 2021 - Mar 2021 (2 mos)</p>
+			<p id="3f587da1-887e-4dbb-a608-e2e06b3f3c67" class="">Description:</p>
+			<p id="99600c05-4279-4c1a-929d-bde018585fb0" class="">Wallpaper app I did in my spare time with friends. My
+				responsibilities includes: research and development new features, fix bugs. Also I participate in
+				different organizational processes. </p>
+			<p id="aa4c18a6-93fa-4162-9d56-8130a39cad10" class="">Stack:</p>
+			<p id="f781e1b6-e630-4de7-9376-da6637a0c357" class="">Android, Kotlin, MVVM, Room, Coroutines, LiveData,
+				LiveCycle, Retrofit, Google Play Billing, Admob</p>
+			<p id="8e335456-9a89-4e63-811c-3eb90038772e" class="">
+			</p>
+			<figure id="4c160718-8d1d-4a45-8819-dd73415c1aa9"><a
+					href="https://play.google.com/store/apps/details?id=com.cosmic.knockdown.cosmetician"
+					class="bookmark source">
+					<div class="bookmark-info">
+						<div class="bookmark-text">
+							<div class="bookmark-title">Dali - free 4k wallpapers - Apps on Google Play</div>
+							<div class="bookmark-description">Dali - is an application, where you can find lots of
+								beautiful backgrounds, free 3D wallpapers and the best HD pictures for your android
+								phone. Many people set wallpapers and themes to add personality and style to their
+								smartphones. User-friendly interface and search by category will help you easily find
+								and download the most suitable wallpaper for you.</div>
+						</div>
+						<div class="bookmark-href"><img
+								src="https://www.gstatic.com/android/market_images/web/favicon_v2.ico"
+								class="icon bookmark-icon" />https://play.google.com/store/apps/details?id=com.cosmic.knockdown.cosmetician
+						</div>
+					</div><img
+						src="https://play-lh.googleusercontent.com/q5VI6XZ7GHtLCrWcZ_OYhsSaRDPOBPHfC7cBc4i2T65dslXf6Dm7w-qjQEZwr5ZvOjE=w600-h300-pc0xffffff-pd"
+						class="bookmark-image" />
+				</a></figure>
+			<p id="9f279da3-bebc-4dc5-ade0-7f8dc972b555" class="">
+			</p>
+			<h3 id="4a8e28e9-7f65-468b-aaa0-33b5a15bdc67" class="">Encyclopedia apps</h3>
+			<p id="bd784284-af8d-49bd-b29e-3763be598ceb" class="">Mar 2017 - Apr 2017 (1 mos)</p>
+			<div id="a9d01ce0-2274-48ea-bcba-9d120af21316" class="column-list">
+				<div id="031d2daf-9a9d-4778-a939-9f5c0c9c0217" style="width:25%" class="column">
+					<figure id="e3d320ea-ca55-4bac-b9f1-83e178964ef0" class="image"><a
+							href="assets/app-icon512_512.png"><img style="width:144px"
+								src="assets/app-icon512_512.png" /></a></figure>
+				</div>
+				<div id="09d72d1e-8fe6-497e-adaa-7437214f7ccc" style="width:75%" class="column">
+					<p id="9d688909-5d43-47f4-9710-8948bc0b512e" class="">Android Applications built on one template:
+						Forest Surviver, Fitness Digest, Mind Training.</p>
+					<p id="f039d6a1-6a8b-4754-aa10-e566d5a95222" class="">One day I made an application for hiking
+						lovers &quot;Forest Surviver&quot; and it had 1k installs, lol :) I didn&#x27;t promote it, but
+						it warms my soul.</p>
+					<p id="9749b0a0-6544-4dc9-a89f-9fcc667d0a7e" class="">I proud of empty crash list, good solutions,
+						etc. And I like icon I made for Forest Survive (but of course I have to improve it)</p>
+				</div>
+			</div>
+			<p id="974b3285-850d-4c2e-a6ee-196527803365" class="">
+			</p>
+			<div id="0dc7b164-aa3b-4a03-a323-b5f7a8ee36a7" class="column-list">
+				<div id="bed0fe4a-43b4-495b-bcf8-d4f682f71f7f" style="width:33.33333333333333%" class="column">
+					<figure id="4b0b66ff-4556-4e34-afd8-1bae83a0520d" class="image"><a
+							href="assets/Untitled%204.png"><img style="width:336px" src="assets/Untitled%204.png" /></a>
+					</figure>
+				</div>
+				<div id="691a9c2f-3c2a-4224-b553-19e097c5c20a" style="width:33.33333333333333%" class="column">
+					<figure id="4ad717be-fe57-45ee-a369-11b3706294e6" class="image"><a
+							href="assets/Untitled%205.png"><img style="width:432px" src="assets/Untitled%205.png" /></a>
+					</figure>
+				</div>
+				<div id="2641f7e1-abd7-467e-9964-fe8d384eba6f" style="width:33.33333333333333%" class="column">
+					<p id="0829b804-e49e-45a6-99b3-2e1c2b04a08a" class="">
+					</p>
+				</div>
+			</div>
+			<div id="55724627-1982-4576-9f06-36b8faedc86e" class="column-list">
+				<div id="98179387-b733-4a65-a3a1-48e9062ee946" style="width:33.33333333333333%" class="column">
+					<figure id="9ec96afd-c94f-4403-ab62-9aef7b628795" class="image"><a
+							href="assets/Untitled%206.png"><img style="width:432px" src="assets/Untitled%206.png" /></a>
+					</figure>
+				</div>
+				<div id="487202ac-d953-4288-9824-1e41ed157e88" style="width:33.333333333333336%" class="column">
+					<figure id="2c658e12-8bfa-490c-bf54-accccb4de76f" class="image"><a
+							href="assets/Untitled%207.png"><img style="width:432px" src="assets/Untitled%207.png" /></a>
+					</figure>
+				</div>
+				<div id="fc4df874-afe1-425a-903f-ccc607f33b7a" style="width:33.333333333333336%" class="column">
+					<p id="c08c716e-28b7-45a3-ad6f-475c390d29c3" class="">
+					</p>
+				</div>
+			</div>
+			<p id="ad4b27d8-f560-4440-8e60-5d4046c1b2c4" class="">
+			</p>
+			<div id="ee035900-2da7-468d-81ae-fc5ae5c20113" class="column-list">
+				<div id="8f2d58ab-7e13-4a32-a4a0-bc750fb0fa33" style="width:6.25%" class="column">
+					<figure id="1648d7bc-bee8-43c1-ae00-585a0c0acba1" class="image"><a
+							href="assets/Untitled%208.png"><img style="width:75px" src="assets/Untitled%208.png" /></a>
+					</figure>
+				</div>
+				<div id="2b811876-c093-4dc0-8cc2-79a020381da5" style="width:93.75%" class="column">
+					<figure id="9a8b42ef-34ff-4ef2-afeb-c49f25ad8c80"><a
+							href="https://apkcombo.com/es-us/%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BB%D0%B5%D1%81%D1%83/com.cosmic.survive.forest/"
+							class="bookmark source">
+							<div class="bookmark-info">
+								<div class="bookmark-text">
+									<div class="bookmark-title"></div>
+								</div>
+								<div class="bookmark-href">
+									https://apkcombo.com/es-us/%D0%B2%D1%8B%D0%B6%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B2-%D0%BB%D0%B5%D1%81%D1%83/com.cosmic.survive.forest/
+								</div>
+							</div>
+						</a></figure>
+				</div>
+			</div>
+			<div id="760b3d9e-d287-47f9-9298-04782549c8ff" class="column-list">
+				<div id="525989b9-fede-4f9a-b9c2-ee615f23ef9f" style="width:6.25%" class="column">
+					<figure id="237d7452-8392-4593-a19d-1160efbacc79" class="image"><a
+							href="assets/Untitled%209.png"><img style="width:75px" src="assets/Untitled%209.png" /></a>
+					</figure>
+				</div>
+				<div id="d92870d5-07ad-485d-a03c-d78c03a5f347" style="width:93.75%" class="column">
+					<figure id="3aa30234-bf08-4418-a35a-5788749acc62"><a
+							href="https://apkcombo.com/es-us/%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82/com.cosmic.fitness.digest/"
+							class="bookmark source">
+							<div class="bookmark-info">
+								<div class="bookmark-text">
+									<div class="bookmark-title"></div>
+								</div>
+								<div class="bookmark-href">
+									https://apkcombo.com/es-us/%D1%84%D0%B8%D1%82%D0%BD%D0%B5%D1%81-%D0%B4%D0%B0%D0%B9%D0%B4%D0%B6%D0%B5%D1%81%D1%82/com.cosmic.fitness.digest/
+								</div>
+							</div>
+						</a></figure>
+				</div>
+			</div>
+			<div id="dbc11792-55d6-4639-9c3f-fc1c8b4132ee" class="column-list">
+				<div id="40a9e3c3-fac2-47ea-a47d-b0083a716357" style="width:6.25%" class="column">
+					<figure id="3dd5bcb4-6704-4777-b738-467545a8d42b" class="image"><a
+							href="assets/Untitled%2010.png"><img style="width:75px"
+								src="assets/Untitled%2010.png" /></a></figure>
+				</div>
+				<div id="e47a1319-2881-41fa-8f11-e9f10227c3c8" style="width:93.75%" class="column">
+					<figure id="aed74653-bc38-4b2c-a820-bbf68175e79d"><a
+							href="https://apkcombo.com/es-us/%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/com.cosmic.smart.digest/"
+							class="bookmark source">
+							<div class="bookmark-info">
+								<div class="bookmark-text">
+									<div class="bookmark-title"></div>
+								</div>
+								<div class="bookmark-href">
+									https://apkcombo.com/es-us/%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BC%D0%BE%D0%B7%D0%B3%D0%B0/com.cosmic.smart.digest/
+								</div>
+							</div>
+						</a></figure>
+				</div>
+			</div>
+			<hr id="acf2a2bc-390d-414a-a080-404375498827" />
+			<h1 id="30209f1c-b6ee-453e-87c4-e54dd4038d5a" class="">🛠 Skills</h1>
+			<h2 id="05e47419-84d2-48b9-9dc3-d9c7343d7a8d" class="">💻 Technology</h2>
+			<p id="4859de19-de8f-4e9a-af04-cb7fa5db0369" class="">I use Kotlin in daily development, but not afraid of
+				Java</p>
+			<p id="bf73526e-dfa4-412c-a5f7-3b71086c26e2" class="">Have experience with Dagger, RxJava, Coroutines,
+				Retrofit, Moxy, Cecerone, Picasso, Lottie, etc</p>
+			<p id="12bb1d5c-d78c-4f85-8162-bee4d2510e5f" class="">❗Have experience with disassembling android apps. Can
+				read and edit java byte code and Dalvik Bytecode in smali format. Also I can write pre-processing for
+				them. It can be used when you want to add some code into application at compilation time.</p>
+			<p id="3ef0689b-87b1-499b-8d95-8d0314c58c5d" class="">Have experience with libGDX - cross-platform java game
+				dev framework.</p>
+			<p id="c7a34b64-af69-494e-8dfa-376c7c240d8b" class="">Have experience in different design patterns</p>
+			<p id="49082383-e7a6-4c76-ad28-dccc5a1e2c92" class="">Have experience in clean architecture. Or to be more
+				precise, its <a
+					href="https://fernandocejas.com/blog/engineering/2014-09-03-architecting-android-the-clean-way/">adaptation
+					for android by Fernando Cejas</a></p>
+			<p id="3154a798-f8cf-413a-ae19-922fdd39fd2c" class="">Have experience in MVP, MVC, MVVM</p>
+			<p id="aa7d82d7-02c8-45b3-90c7-a4cebdb5a8d3" class="">Respecting SOLID, <a
+					href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">DRY</a>, KISS, <a
+					href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">YAGNI</a></p>
+			<p id="f08f6f3f-eb96-4473-94cb-64d477b58237" class="">I can write simple SQL to reach data from databases.
+			</p>
+			<p id="b5677432-ea52-4db8-84d6-6aa04e5a97ab" class="">
+			</p>
+			<ul id="f57385bc-2116-4e08-aaad-7b7ef0693880" class="toggle">
+				<li>
+					<details open="">
+						<summary>Bonus</summary>
+						<p id="e6efd887-b549-41ef-9413-490b7a2da7af" class="">Have experience in web development
+							(backend and frontend). I developed backend on PHP with CakePhp framework. And for frontend
+							development I used javascript with jQuery, twitter bootstrap.</p>
+						<p id="17d3963b-fb0e-4656-8e24-28a028244627" class="">
+						</p>
+						<p id="a7c8165f-077e-4444-bc88-7aac5629d206" class="">Have experience in iOS development. I made
+							several apps and games on objective-c with Cocos2d, WebKit, CloudKit, CocoaTouch frameworks.
+						</p>
+						<p id="80baff66-427b-4682-8ba1-4f6fab152aa5" class="">
+						</p>
+						<p id="655d22fb-2c86-4c57-9a6e-b30a88a326a3" class="">Have experience in Unity development. Have
+							<a href="http://consoleassert.github.io/ssnhntrmstrd/">unfinished pet project</a></p>
+					</details>
+				</li>
+			</ul>
+			<hr id="48c49fd2-2d69-4e3e-8fe9-050098a8d04d" />
+			<h2 id="b6e24e38-c7c7-4482-b3dd-481d459e7e0e" class="">🗣 Languages</h2>
+			<h3 id="d61d8696-5018-41c9-8d54-6aa85a8ce91d" class="">Russian 🇷🇺</h3>
+			<p id="a4e6e0b7-f4c6-4313-a46a-b243ce9751f5" class="">Native speaker</p>
+			<h3 id="186d06c7-8001-46d9-a150-9d6dbf6822d3" class="">English 🇬🇧🇺🇸</h3>
+			<p id="c95ba077-8e12-433d-93e7-f506d69adc80" class="">My level varies between B1 and B2 (Intermediate and
+				Upper Intermediate). </p>
+			<p id="56b40810-7759-499a-868e-c5d4d3954502" class="">One day I passed interview which had a part of the
+				language test at B2</p>
+			<hr id="c7d35d30-3ef3-49b1-a79a-d6de839288d8" />
+			<h1 id="12eee673-db9b-4d26-8514-1d2a5f4caf16" class="">📚 Education and courses</h1>
+			<h2 id="c71683f3-8fed-491e-8473-e3346e2cba62" class="">Penza State Technological University</h2>
+			<p id="92ffa358-f8cf-4c30-aada-29a6c148a3ef" class="block-color-gray">Master&#x27;s Degree, Electrical
+				Engineering &amp; Computer Science at Penza State Technological </p>
+			<p id="eb486e3d-c515-457e-9d62-3133c23304c2" class=""><em>Sep 2009 - Jul 2014</em></p>
+			<p id="b3dff7a4-437a-4f68-a0a4-346a04bc1bb5" class="">The theme of my thesis was the development of
+				cross-platform client for an educational institution. Application was written on javascript and Cordova
+				framework which wraps HTML/JavaScript app into a native container which can access the devices functions
+				of several platform.</p>
+			<h2 id="9fcae8b3-3982-4f33-b3a1-7b2d9459b6a2" class="">SECON Conference</h2>
+			<p id="8dfabc37-8ac8-45ca-8129-c157531f90aa" class="">Participated as a listener in 2013, 2017, 2019.</p>
+			<h2 id="391b43b6-3d35-4e2e-9132-7ef701ae2a53" class="">Podlodka Android Crew</h2>
+			<p id="9bae21a3-81b4-461e-8bb2-4c6ca2248fcc" class="">Feb 2021 - Feb 2021 (2 weeks)</p>
+			<p id="9dc5d0b1-2fb8-444f-8299-3bf2147c21aa" class="">Participated as a listener. First week was about UI in
+				Android. Second week was about algorithms.</p>
+			<p id="ead39973-6f3e-4c61-b41e-b66bee57c5c7" class="">Apr 2021 - Apr 2021 (2 weeks)</p>
+			<p id="919a5a78-48a1-40bd-a647-a69539ab0d79" class="">Participated as a listener. First week was about
+				multithreading and concurrency. Second week was about jetpack.</p>
+			<p id="398bec7f-10d5-49fb-9a8e-4276f1e33b7a" class="">
+			</p>
+		</div>
+	</article>
+</body>
+
+</html>
