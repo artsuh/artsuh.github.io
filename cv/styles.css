@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap');
+
+body {
+    max-width: 900px; /* Максимальная ширина */
+    margin: 0 auto;   /* Выравнивание по центру */
+    padding: 20px;    /* Отступы для удобства чтения */
+    font-family: 'IBM Plex Mono', monospace; /* Установите желаемый шрифт */
+    line-height: 1.6; /* Оптимальное расстояние между строками */
+}
